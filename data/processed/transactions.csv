@@ -1,0 +1,801 @@
+transaction_id,supplier_id,buyer_company,transaction_date,payment_amount,payment_delay_days,delivery_quality_score,contract_reference,product_category,dispute_flag,on_time_delivery
+T_000001,S_00177,Cooper Inc,2025-03-05,28082,8,57,C_431,Logistics,0,1
+T_000002,S_00349,"Dixon, Williams and Williams",2025-08-12,3936,6,98,C_853,Medical Devices,0,1
+T_000003,S_00323,Moore-Gross,2025-07-02,36789,5,82,C_324,Logistics,0,1
+T_000004,S_00205,"Gordon, Foley and Morrison",2025-06-10,2996,47,65,C_843,Office Supplies,1,0
+T_000005,S_00168,Ross-Wright,2024-12-23,24485,48,67,C_771,Raw Materials,0,0
+T_000006,S_00318,Henderson Group,2025-03-06,4429,78,92,C_522,Logistics,0,0
+T_000007,S_00333,Adams-Ross,2025-06-26,5296,26,86,C_361,Logistics,0,0
+T_000008,S_00070,"Williams, Gutierrez and Stephens",2025-06-26,32952,40,64,C_434,Medical Devices,0,0
+T_000009,S_00251,Santos Inc,2025-06-06,46417,78,94,C_611,Raw Materials,0,0
+T_000010,S_00281,Fernandez-Patel,2024-12-22,2458,88,84,C_252,IT Equipment,0,0
+T_000011,S_00438,Pineda-Nguyen,2025-06-14,20890,10,54,C_154,Medical Devices,0,0
+T_000012,S_00224,Choi-Burns,2025-07-30,22485,7,54,C_586,Office Supplies,0,1
+T_000013,S_00368,Gallagher-Adams,2025-10-22,32562,38,60,C_367,Raw Materials,0,0
+T_000014,S_00053,"Kelley, Daniels and Hernandez",2025-01-16,47848,13,76,C_605,Raw Materials,0,0
+T_000015,S_00310,Nash LLC,2024-11-24,5677,86,91,C_337,Office Supplies,0,0
+T_000016,S_00289,Steele LLC,2025-07-27,1615,67,92,C_282,Medical Devices,0,0
+T_000017,S_00315,"Brown, Dickerson and Cameron",2025-05-03,48427,13,57,C_278,Logistics,0,0
+T_000018,S_00220,Juarez LLC,2025-08-05,6324,76,66,C_897,Medical Devices,0,0
+T_000019,S_00345,Moore-Gonzales,2024-12-10,34907,86,96,C_237,Raw Materials,0,0
+T_000020,S_00238,Espinoza Group,2025-09-28,38444,72,58,C_857,Raw Materials,0,0
+T_000021,S_00262,Curtis-Dodson,2025-06-22,8276,32,71,C_714,Logistics,0,0
+T_000022,S_00487,Lucas and Sons,2025-02-02,48365,54,91,C_631,Logistics,0,0
+T_000023,S_00005,Morgan-Elliott,2024-11-03,15839,30,52,C_429,IT Equipment,0,0
+T_000024,S_00416,"White, Ward and Garcia",2025-09-26,37673,33,51,C_523,Logistics,0,0
+T_000025,S_00225,"Wilson, Wheeler and Todd",2025-04-15,15376,14,51,C_589,Logistics,0,0
+T_000026,S_00206,Scott LLC,2025-08-01,12200,33,67,C_696,Office Supplies,0,0
+T_000027,S_00310,"Nunez, Holmes and Taylor",2025-07-16,21451,28,72,C_319,IT Equipment,0,0
+T_000028,S_00360,Cannon Group,2025-10-18,9126,5,55,C_190,Logistics,0,1
+T_000029,S_00262,"Anderson, Guerrero and Carr",2025-02-07,46115,25,67,C_383,Office Supplies,0,0
+T_000030,S_00464,"Rodriguez, Greene and Edwards",2025-04-13,20276,82,70,C_840,IT Equipment,0,0
+T_000031,S_00103,"Wong, Rose and Ryan",2025-10-22,9238,84,91,C_944,Medical Devices,0,0
+T_000032,S_00050,Smith Inc,2025-03-05,48627,4,71,C_198,Logistics,0,1
+T_000033,S_00121,Freeman LLC,2025-09-11,4196,80,94,C_334,Medical Devices,0,0
+T_000034,S_00500,"Johnson, Gutierrez and Barker",2025-05-19,9624,10,93,C_445,Logistics,0,0
+T_000035,S_00033,Mcclure-Gonzales,2025-09-25,7325,28,54,C_581,IT Equipment,0,0
+T_000036,S_00171,Keith PLC,2024-12-29,33611,30,79,C_421,Medical Devices,0,0
+T_000037,S_00285,Morales-Nelson,2025-06-14,4699,39,61,C_596,Medical Devices,0,0
+T_000038,S_00363,Gill and Sons,2025-06-22,30833,8,65,C_529,Office Supplies,1,1
+T_000039,S_00018,Shea-Howe,2024-11-17,33891,80,50,C_865,Medical Devices,0,0
+T_000040,S_00462,Patterson Ltd,2024-12-18,26072,20,57,C_694,Office Supplies,0,0
+T_000041,S_00108,Stark PLC,2025-04-15,1410,42,73,C_440,Raw Materials,1,0
+T_000042,S_00118,Hicks LLC,2025-10-29,41257,34,90,C_504,Medical Devices,1,0
+T_000043,S_00242,Lee-Gonzales,2025-10-17,40239,78,51,C_595,Office Supplies,0,0
+T_000044,S_00227,Edwards-Russo,2025-02-25,7833,63,80,C_671,IT Equipment,0,0
+T_000045,S_00213,"Guerrero, Clayton and Holland",2025-08-04,8762,49,53,C_736,Office Supplies,0,0
+T_000046,S_00275,Perez-Johnson,2025-08-09,3152,2,60,C_173,Medical Devices,0,1
+T_000047,S_00030,Davis-Benton,2025-08-26,14952,66,93,C_843,Logistics,0,0
+T_000048,S_00463,"Young, Williams and Lyons",2025-03-18,3160,63,81,C_192,Medical Devices,0,0
+T_000049,S_00497,"Hill, Villegas and Anderson",2025-03-11,12992,69,81,C_502,IT Equipment,0,0
+T_000050,S_00223,"Garcia, Robinson and Davis",2025-05-01,31745,80,83,C_635,Medical Devices,0,0
+T_000051,S_00126,Mccarthy and Sons,2025-03-09,36704,32,98,C_324,Office Supplies,0,0
+T_000052,S_00478,Mcdonald-Howard,2025-01-15,46332,36,88,C_514,Logistics,0,0
+T_000053,S_00349,Peters-White,2025-02-21,35928,65,50,C_836,Logistics,0,0
+T_000054,S_00110,Miller-Brown,2025-04-25,1620,1,71,C_484,Medical Devices,0,1
+T_000055,S_00355,Barnes Ltd,2025-08-05,48839,45,74,C_706,Raw Materials,0,0
+T_000056,S_00270,"Reese, Taylor and Robbins",2025-07-01,13719,22,82,C_892,Office Supplies,0,0
+T_000057,S_00113,Barton Inc,2025-08-17,15301,26,84,C_717,Office Supplies,0,0
+T_000058,S_00287,Joseph-Moore,2025-03-28,18177,84,67,C_922,IT Equipment,0,0
+T_000059,S_00289,Carpenter and Sons,2025-10-01,9649,89,70,C_436,Office Supplies,0,0
+T_000060,S_00184,Clark-Smith,2025-03-08,5780,65,68,C_864,Raw Materials,0,0
+T_000061,S_00363,Williams-Rich,2025-02-13,25748,20,76,C_860,Raw Materials,0,0
+T_000062,S_00178,Mendez Group,2025-02-24,42554,77,64,C_393,Medical Devices,0,0
+T_000063,S_00281,Lee Group,2025-06-20,41317,2,94,C_711,Raw Materials,0,1
+T_000064,S_00390,Washington LLC,2025-05-10,45099,75,68,C_318,Raw Materials,0,0
+T_000065,S_00455,Garcia-Faulkner,2024-11-19,5726,52,71,C_426,Raw Materials,0,0
+T_000066,S_00214,Escobar Group,2024-12-16,32239,19,52,C_211,Raw Materials,0,0
+T_000067,S_00190,Mcgrath and Sons,2024-12-26,5239,90,93,C_358,Medical Devices,0,0
+T_000068,S_00470,"Johnson, Johnson and Jones",2025-03-08,36485,12,95,C_735,Logistics,0,0
+T_000069,S_00350,"Brown, Jennings and George",2025-07-05,2601,34,97,C_730,Medical Devices,0,0
+T_000070,S_00429,Mckee-Washington,2025-02-16,14587,60,76,C_808,Raw Materials,0,0
+T_000071,S_00221,"Mcintyre, Ryan and White",2025-04-01,27818,26,72,C_255,Office Supplies,0,0
+T_000072,S_00401,Andersen Ltd,2025-04-17,9621,13,59,C_410,Raw Materials,0,0
+T_000073,S_00064,Holmes-Mills,2025-03-21,40296,5,52,C_728,Logistics,0,1
+T_000074,S_00090,Sanchez-Molina,2025-01-28,22819,66,70,C_548,Office Supplies,0,0
+T_000075,S_00244,Miller-Mahoney,2025-09-27,33692,47,64,C_948,Raw Materials,1,0
+T_000076,S_00437,"Sullivan, Perez and Curry",2025-07-22,37171,68,58,C_854,Logistics,0,0
+T_000077,S_00271,"Smith, Glover and Alvarado",2025-03-24,4114,84,61,C_306,Logistics,0,0
+T_000078,S_00095,Smith Inc,2025-03-08,29531,17,51,C_948,IT Equipment,0,0
+T_000079,S_00289,Navarro-White,2025-03-17,9823,16,55,C_374,Medical Devices,0,0
+T_000080,S_00384,"Blair, Vargas and Freeman",2025-04-24,35205,6,78,C_702,Medical Devices,0,1
+T_000081,S_00390,Fox PLC,2025-08-27,14215,29,80,C_125,IT Equipment,0,0
+T_000082,S_00106,Atkinson and Sons,2025-01-24,45041,29,58,C_172,Logistics,0,0
+T_000083,S_00392,Ryan and Sons,2025-06-03,24700,72,68,C_852,IT Equipment,0,0
+T_000084,S_00071,Sandoval LLC,2025-02-16,20484,74,75,C_769,Logistics,0,0
+T_000085,S_00093,Wang Ltd,2025-06-07,31135,76,82,C_165,Raw Materials,0,0
+T_000086,S_00289,Edwards LLC,2025-01-21,6897,38,75,C_804,Office Supplies,1,0
+T_000087,S_00236,Farmer-Howard,2025-02-20,8234,84,59,C_151,Office Supplies,0,0
+T_000088,S_00044,"Sullivan, Nelson and Fletcher",2025-03-26,5540,86,69,C_364,Logistics,1,0
+T_000089,S_00350,Paul-Roy,2025-10-11,12813,28,52,C_775,IT Equipment,0,0
+T_000090,S_00390,"Church, Raymond and Lynch",2025-07-04,4836,0,80,C_865,Medical Devices,0,1
+T_000091,S_00451,Mitchell Ltd,2025-03-05,29225,55,66,C_235,Medical Devices,0,0
+T_000092,S_00364,Kelley-Dunn,2025-07-27,13136,77,71,C_764,Logistics,0,0
+T_000093,S_00226,"Cole, Trujillo and Wolf",2025-07-19,46697,80,77,C_253,Logistics,0,0
+T_000094,S_00102,Lewis-Ross,2024-12-04,36896,81,76,C_780,Raw Materials,0,0
+T_000095,S_00446,Beasley-Wilkinson,2025-03-03,14108,11,97,C_564,Medical Devices,0,0
+T_000096,S_00304,Rodriguez-Moore,2025-05-04,30032,85,73,C_999,Logistics,0,0
+T_000097,S_00159,Rodriguez Ltd,2025-04-17,27086,27,54,C_312,IT Equipment,0,0
+T_000098,S_00112,"Watson, Brown and King",2025-05-10,16299,27,91,C_508,Raw Materials,0,0
+T_000099,S_00299,Davis-Weaver,2025-06-28,36507,10,97,C_506,Logistics,0,0
+T_000100,S_00342,"Stewart, Adams and Hubbard",2025-09-21,45084,3,59,C_389,Office Supplies,0,1
+T_000101,S_00239,"Yu, Gilbert and Dennis",2025-05-31,47118,48,69,C_455,Logistics,0,0
+T_000102,S_00226,Monroe-Clark,2025-10-14,47147,3,71,C_789,Office Supplies,0,1
+T_000103,S_00055,"Jordan, Sherman and Reynolds",2025-03-18,35186,66,83,C_391,IT Equipment,0,0
+T_000104,S_00483,Robles LLC,2024-11-08,44130,76,81,C_470,Office Supplies,0,0
+T_000105,S_00082,Logan and Sons,2025-09-25,49586,67,97,C_198,Raw Materials,0,0
+T_000106,S_00023,Turner Ltd,2025-04-05,3846,12,56,C_938,IT Equipment,0,0
+T_000107,S_00120,Martinez Inc,2025-10-28,43405,80,67,C_644,Raw Materials,0,0
+T_000108,S_00470,"Willis, Bell and Thompson",2025-03-09,14674,60,88,C_837,Raw Materials,0,0
+T_000109,S_00074,Kim-Allen,2025-03-24,35869,4,75,C_855,Logistics,1,1
+T_000110,S_00099,Porter-Robinson,2025-04-06,17820,88,88,C_780,IT Equipment,0,0
+T_000111,S_00047,Davis PLC,2025-10-24,15803,18,78,C_798,Medical Devices,0,0
+T_000112,S_00039,Doyle Ltd,2025-07-15,45616,36,84,C_833,Office Supplies,0,0
+T_000113,S_00088,"Williams, Haley and Harris",2025-02-21,39698,64,52,C_396,Logistics,0,0
+T_000114,S_00016,Taylor-Graham,2025-09-17,32189,26,96,C_657,IT Equipment,0,0
+T_000115,S_00231,"Rodriguez, Schultz and Elliott",2024-12-04,24564,25,54,C_577,IT Equipment,0,0
+T_000116,S_00293,Rogers-Davis,2024-11-18,35834,9,79,C_736,IT Equipment,0,1
+T_000117,S_00450,"Leon, Whitaker and Griffin",2025-02-14,26425,5,75,C_853,Raw Materials,0,1
+T_000118,S_00093,Hurley and Sons,2025-05-05,35368,82,100,C_932,Raw Materials,0,0
+T_000119,S_00387,Smith PLC,2025-01-27,31668,51,92,C_442,Raw Materials,0,0
+T_000120,S_00172,Powers and Sons,2024-11-27,47666,31,53,C_447,Office Supplies,0,0
+T_000121,S_00367,"Simmons, Bradley and Bray",2025-03-20,24237,20,85,C_650,Office Supplies,0,0
+T_000122,S_00386,Moss-Gates,2025-06-13,37463,12,85,C_880,Office Supplies,0,0
+T_000123,S_00274,Evans Ltd,2025-06-06,20988,36,65,C_360,Raw Materials,0,0
+T_000124,S_00447,Jenkins-Larson,2025-04-27,48438,55,78,C_555,IT Equipment,0,0
+T_000125,S_00419,"Brown, Daniels and Turner",2025-09-16,38352,86,60,C_653,IT Equipment,0,0
+T_000126,S_00309,Zhang Ltd,2025-07-09,35125,63,85,C_284,Office Supplies,0,0
+T_000127,S_00191,Miller Ltd,2025-04-27,12960,23,63,C_471,Logistics,1,0
+T_000128,S_00482,Thomas and Sons,2025-02-26,5543,81,58,C_783,Raw Materials,0,0
+T_000129,S_00096,"Lowe, Mack and Collins",2025-06-03,15683,5,82,C_490,Logistics,0,1
+T_000130,S_00125,Davis Ltd,2025-01-09,7585,43,57,C_174,Logistics,0,0
+T_000131,S_00344,Keller Inc,2024-11-23,21999,28,79,C_997,Office Supplies,0,0
+T_000132,S_00111,Hodges Group,2025-10-11,24770,77,63,C_924,Raw Materials,1,0
+T_000133,S_00279,"Ward, Perez and Suarez",2025-02-08,9757,59,63,C_337,Raw Materials,0,0
+T_000134,S_00485,Carey LLC,2025-01-21,35620,43,65,C_580,Raw Materials,0,0
+T_000135,S_00481,"Fletcher, Morgan and Arnold",2025-09-06,49427,56,70,C_169,Logistics,0,0
+T_000136,S_00224,"Gonzales, Terry and Hernandez",2025-05-25,47747,11,83,C_994,Office Supplies,0,0
+T_000137,S_00069,"Williams, Gonzalez and Jenkins",2025-09-29,1308,19,77,C_430,Office Supplies,0,0
+T_000138,S_00216,Sanchez-Hurst,2025-10-03,5967,16,62,C_400,IT Equipment,0,0
+T_000139,S_00090,Yang Group,2025-02-27,43911,83,95,C_518,Logistics,0,0
+T_000140,S_00378,"Ramos, Contreras and Cannon",2025-03-23,9654,51,83,C_366,Raw Materials,0,0
+T_000141,S_00416,"Anderson, Frey and Lewis",2025-10-29,19822,0,56,C_320,Office Supplies,0,1
+T_000142,S_00372,Jones-Jones,2025-03-27,35505,70,59,C_160,Medical Devices,0,0
+T_000143,S_00448,"Clark, Robinson and Wilcox",2025-04-04,28582,19,74,C_798,Office Supplies,0,0
+T_000144,S_00162,"Randall, Jackson and Miller",2025-05-29,13334,59,89,C_100,Office Supplies,0,0
+T_000145,S_00476,"Sanders, Castro and Spencer",2025-07-16,32815,60,79,C_173,Office Supplies,0,0
+T_000146,S_00126,"Hernandez, Campbell and Cruz",2025-03-28,47658,37,54,C_515,Medical Devices,0,0
+T_000147,S_00247,Leach-Evans,2025-05-27,27348,87,98,C_116,Medical Devices,0,0
+T_000148,S_00477,Johnson-Padilla,2025-07-19,28060,33,84,C_613,Medical Devices,0,0
+T_000149,S_00145,Bowman PLC,2024-12-11,26233,89,91,C_749,Office Supplies,0,0
+T_000150,S_00372,"Holmes, Pope and Nicholson",2025-06-20,38078,43,97,C_965,IT Equipment,0,0
+T_000151,S_00010,"Tucker, Hall and Good",2024-12-31,26824,74,90,C_179,Office Supplies,0,0
+T_000152,S_00361,"Stevenson, Gray and Mendoza",2024-11-17,34724,23,52,C_223,Office Supplies,0,0
+T_000153,S_00176,Garcia Inc,2025-06-24,34934,19,51,C_468,Office Supplies,0,0
+T_000154,S_00250,"Young, Nelson and Price",2025-01-17,5865,79,88,C_157,Raw Materials,0,0
+T_000155,S_00295,Hendricks-Lawson,2025-04-17,28405,74,72,C_859,IT Equipment,0,0
+T_000156,S_00022,Watson-Thomas,2025-04-05,29665,67,69,C_370,Logistics,0,0
+T_000157,S_00481,"Hart, Brown and Lee",2025-06-20,15683,19,75,C_231,Raw Materials,1,0
+T_000158,S_00404,"Rios, Garcia and Daniels",2024-12-05,4104,0,77,C_117,IT Equipment,0,1
+T_000159,S_00170,Hayes Ltd,2025-03-09,47633,47,77,C_433,Logistics,0,0
+T_000160,S_00190,Roberts Ltd,2025-05-26,2973,42,67,C_385,Office Supplies,0,0
+T_000161,S_00158,"Benitez, Hayden and Wagner",2025-06-17,43614,2,91,C_184,Raw Materials,0,1
+T_000162,S_00073,Roberts LLC,2025-01-18,32198,36,54,C_684,Medical Devices,0,0
+T_000163,S_00148,Alvarez PLC,2025-07-04,12780,64,60,C_224,Raw Materials,0,0
+T_000164,S_00027,Holmes and Sons,2025-04-23,36068,61,68,C_978,Medical Devices,0,0
+T_000165,S_00010,Jones-Smith,2025-01-08,38742,4,94,C_321,Raw Materials,0,1
+T_000166,S_00230,Armstrong PLC,2025-09-23,23836,37,81,C_353,Office Supplies,0,0
+T_000167,S_00110,Howell-Torres,2024-11-17,42451,35,70,C_777,Raw Materials,0,0
+T_000168,S_00258,Hancock-Fitzgerald,2025-01-21,28691,15,80,C_791,Medical Devices,0,0
+T_000169,S_00188,"White, Leon and Benjamin",2025-04-04,25146,88,70,C_753,Medical Devices,0,0
+T_000170,S_00074,Campos-Estrada,2025-04-25,23235,25,56,C_219,Office Supplies,0,0
+T_000171,S_00276,"Sanchez, Marks and Williams",2025-07-11,4877,14,59,C_776,IT Equipment,0,0
+T_000172,S_00419,Higgins and Sons,2025-08-05,36266,7,98,C_342,Office Supplies,0,1
+T_000173,S_00361,Mata-Medina,2025-09-12,7312,38,87,C_983,Raw Materials,0,0
+T_000174,S_00433,Molina PLC,2025-08-22,47201,26,72,C_985,Office Supplies,0,0
+T_000175,S_00333,"White, Garcia and Nichols",2025-01-30,47691,69,68,C_636,IT Equipment,0,0
+T_000176,S_00204,Murray-Henderson,2025-04-17,36481,44,62,C_792,Office Supplies,0,0
+T_000177,S_00182,"Gonzales, Fields and Bailey",2025-07-21,23977,85,75,C_552,IT Equipment,0,0
+T_000178,S_00151,"Moore, Colon and Johnson",2025-04-30,11099,4,75,C_295,Logistics,0,1
+T_000179,S_00171,Morrison-Peters,2024-12-23,23072,28,91,C_666,IT Equipment,0,0
+T_000180,S_00045,Williams LLC,2025-01-09,30362,39,50,C_761,IT Equipment,0,0
+T_000181,S_00341,Cox Inc,2025-04-23,43105,24,57,C_403,Raw Materials,0,0
+T_000182,S_00492,"Case, Jones and Contreras",2025-01-24,9000,42,77,C_220,Medical Devices,0,0
+T_000183,S_00478,"Williams, Walker and James",2025-05-04,6429,28,56,C_156,IT Equipment,0,0
+T_000184,S_00315,Sanchez-Martinez,2025-07-24,23383,16,79,C_245,Medical Devices,0,0
+T_000185,S_00125,"Duncan, Garrett and Santiago",2025-04-25,12781,48,72,C_667,IT Equipment,0,0
+T_000186,S_00171,Randall PLC,2025-01-22,31772,3,81,C_609,Medical Devices,0,1
+T_000187,S_00461,Lewis-Walter,2024-12-05,4925,18,61,C_776,Office Supplies,0,0
+T_000188,S_00070,Stephens-Clark,2025-04-13,25440,75,66,C_161,IT Equipment,0,0
+T_000189,S_00095,Webb-Peterson,2025-05-24,36362,13,50,C_492,Logistics,1,0
+T_000190,S_00425,Harrison Group,2025-10-20,35684,64,76,C_252,Logistics,0,0
+T_000191,S_00369,Wallace-Stevenson,2024-11-26,19837,59,63,C_217,IT Equipment,0,0
+T_000192,S_00142,"Houston, Harmon and Graham",2025-10-23,4984,83,59,C_819,Raw Materials,0,0
+T_000193,S_00201,"Russo, Thompson and Cooper",2024-12-22,39761,9,62,C_759,Office Supplies,0,1
+T_000194,S_00203,Jordan and Sons,2025-03-27,48469,47,74,C_834,Raw Materials,0,0
+T_000195,S_00446,Anderson-Jones,2025-02-21,39799,16,71,C_137,Office Supplies,0,0
+T_000196,S_00472,"Smith, Mcdowell and Thompson",2025-08-29,43683,69,60,C_855,IT Equipment,0,0
+T_000197,S_00028,"Baldwin, Terry and Wallace",2025-04-04,29177,5,51,C_552,Office Supplies,0,1
+T_000198,S_00240,"Gamble, Anderson and Green",2025-04-29,23814,76,99,C_401,IT Equipment,0,0
+T_000199,S_00198,"King, Cochran and Davis",2025-01-05,7538,75,73,C_315,Logistics,0,0
+T_000200,S_00063,Mason PLC,2025-08-08,2208,80,56,C_818,Office Supplies,0,0
+T_000201,S_00010,"Rivas, Colon and Frederick",2025-02-05,36534,71,58,C_683,Medical Devices,0,0
+T_000202,S_00253,"Moore, Fisher and Fleming",2025-09-27,27957,60,59,C_819,IT Equipment,0,0
+T_000203,S_00396,Cuevas Group,2025-03-02,16696,3,79,C_620,Medical Devices,1,1
+T_000204,S_00160,Holder Inc,2025-07-28,45723,2,98,C_213,Logistics,0,1
+T_000205,S_00131,Chapman Group,2025-10-26,22231,8,60,C_663,Office Supplies,1,1
+T_000206,S_00414,Gibson-Taylor,2025-04-16,39488,55,81,C_267,Medical Devices,0,0
+T_000207,S_00012,Sanchez-Jones,2025-02-20,45792,69,76,C_278,Office Supplies,0,0
+T_000208,S_00274,"Adams, Olson and Morales",2024-11-06,27858,50,53,C_605,Raw Materials,0,0
+T_000209,S_00052,Curry-Baker,2025-04-09,12722,26,59,C_297,Medical Devices,0,0
+T_000210,S_00231,"Mason, Sims and Ibarra",2025-02-17,7359,78,56,C_516,Office Supplies,0,0
+T_000211,S_00353,Santos-Sandoval,2025-10-08,29114,13,59,C_241,Medical Devices,0,0
+T_000212,S_00467,Cooper PLC,2025-09-26,19315,16,77,C_587,Office Supplies,0,0
+T_000213,S_00081,"Kirk, Garrett and Richards",2025-04-02,3347,61,93,C_616,Office Supplies,0,0
+T_000214,S_00068,"Jones, Blake and White",2025-05-18,6480,67,73,C_187,Medical Devices,0,0
+T_000215,S_00193,Martinez and Sons,2025-03-13,47611,21,91,C_386,Office Supplies,0,0
+T_000216,S_00238,"Mckay, Bernard and Gonzalez",2025-08-25,33504,38,98,C_570,Raw Materials,0,0
+T_000217,S_00425,"Freeman, Carlson and Abbott",2025-06-11,31281,17,94,C_227,Medical Devices,0,0
+T_000218,S_00040,"Glover, Mccormick and Rubio",2025-06-11,45280,33,71,C_378,IT Equipment,0,0
+T_000219,S_00114,Reed-Mcgee,2025-05-26,8904,75,56,C_274,IT Equipment,0,0
+T_000220,S_00376,Hensley Inc,2025-10-21,42957,4,96,C_280,Raw Materials,0,1
+T_000221,S_00238,Evans-Grant,2025-06-08,28211,70,83,C_226,Office Supplies,0,0
+T_000222,S_00023,Mays and Sons,2025-04-05,41588,33,62,C_370,Medical Devices,1,0
+T_000223,S_00126,Barker Group,2024-11-30,37893,61,59,C_305,Medical Devices,0,0
+T_000224,S_00401,Smith-Velasquez,2024-11-18,9744,86,91,C_806,Logistics,0,0
+T_000225,S_00156,Smith-Ramsey,2025-03-24,33556,71,82,C_418,Medical Devices,0,0
+T_000226,S_00225,Dawson-Nguyen,2025-05-27,28620,82,90,C_613,Medical Devices,0,0
+T_000227,S_00046,"Cook, Wood and Johnson",2025-02-16,40105,9,80,C_394,Office Supplies,0,1
+T_000228,S_00436,Watkins Inc,2025-02-27,16028,82,69,C_264,Medical Devices,0,0
+T_000229,S_00435,"Wong, Alvarez and Brown",2024-12-25,34793,77,81,C_128,Raw Materials,0,0
+T_000230,S_00220,Jones-Wright,2025-04-28,15975,72,88,C_491,IT Equipment,0,0
+T_000231,S_00441,"Roberts, Jackson and Mcintosh",2025-04-24,8367,25,76,C_856,Logistics,0,0
+T_000232,S_00381,Gentry Inc,2025-05-26,46018,9,52,C_624,Raw Materials,0,1
+T_000233,S_00429,Mathews-Gillespie,2025-04-18,14249,25,57,C_802,Logistics,0,0
+T_000234,S_00246,Smith Ltd,2025-01-22,3473,30,84,C_632,Office Supplies,0,0
+T_000235,S_00167,"Chandler, Berg and Roberts",2025-03-15,34065,34,88,C_703,Medical Devices,0,0
+T_000236,S_00375,Wright-Wright,2025-01-19,25796,69,96,C_177,Medical Devices,0,0
+T_000237,S_00035,Lewis-Blankenship,2025-07-14,30714,70,82,C_368,IT Equipment,0,0
+T_000238,S_00253,"Blanchard, Thomas and Martinez",2025-04-13,25475,63,78,C_594,IT Equipment,0,0
+T_000239,S_00250,Frey-Collins,2025-10-12,19987,72,79,C_593,Raw Materials,0,0
+T_000240,S_00120,"Diaz, Nguyen and Mitchell",2025-01-12,46821,8,65,C_847,Medical Devices,0,1
+T_000241,S_00395,Thomas Inc,2024-12-15,2365,69,81,C_881,Medical Devices,0,0
+T_000242,S_00387,Stewart Inc,2025-05-27,11010,4,65,C_366,IT Equipment,0,1
+T_000243,S_00010,Thomas Ltd,2024-11-24,7962,87,75,C_458,Raw Materials,0,0
+T_000244,S_00447,"Brown, Medina and Young",2025-01-05,14560,64,54,C_532,Logistics,0,0
+T_000245,S_00304,"Camacho, Turner and Davis",2025-06-16,34448,73,90,C_856,Raw Materials,0,0
+T_000246,S_00129,Mitchell-Harris,2025-07-31,20649,64,71,C_392,Medical Devices,0,0
+T_000247,S_00420,Grimes-Wright,2025-05-11,36291,11,67,C_464,Medical Devices,1,0
+T_000248,S_00032,"Banks, Roberts and Jones",2025-05-24,40992,61,92,C_559,Office Supplies,0,0
+T_000249,S_00424,Sanders-Ali,2025-05-29,28781,67,93,C_708,Office Supplies,0,0
+T_000250,S_00120,Lowe and Sons,2024-12-26,24106,23,55,C_783,IT Equipment,0,0
+T_000251,S_00490,"Gomez, Long and Ramos",2024-12-07,33181,41,83,C_901,Office Supplies,1,0
+T_000252,S_00115,"Calderon, Phillips and Sanders",2025-05-21,2269,53,97,C_272,Logistics,0,0
+T_000253,S_00173,"Carter, Cook and Rios",2024-12-02,16763,46,65,C_789,IT Equipment,0,0
+T_000254,S_00276,Ross-Miller,2024-11-02,33434,28,74,C_574,IT Equipment,0,0
+T_000255,S_00290,"Jones, Smith and Ortega",2025-07-07,3149,38,92,C_277,Logistics,0,0
+T_000256,S_00009,Phillips Group,2025-10-31,3794,25,97,C_601,Medical Devices,0,0
+T_000257,S_00458,Haley-Peck,2025-04-15,8346,16,90,C_315,Medical Devices,0,0
+T_000258,S_00446,Reese LLC,2025-05-31,10049,55,53,C_862,Logistics,0,0
+T_000259,S_00321,Fitzpatrick Inc,2024-11-21,41073,53,73,C_551,IT Equipment,0,0
+T_000260,S_00348,Holmes and Sons,2025-06-26,38542,69,84,C_353,Raw Materials,0,0
+T_000261,S_00219,Gibson-Adams,2025-05-01,35695,8,93,C_737,IT Equipment,0,1
+T_000262,S_00338,Sanchez-Cooper,2024-11-03,34224,54,96,C_836,Medical Devices,0,0
+T_000263,S_00371,"Miller, Cook and Harrison",2025-05-12,4826,58,86,C_214,Medical Devices,0,0
+T_000264,S_00094,Reeves-Thomas,2024-11-23,40000,29,80,C_983,Medical Devices,0,0
+T_000265,S_00047,Guerrero Ltd,2024-11-22,17132,22,99,C_213,IT Equipment,0,0
+T_000266,S_00064,"Taylor, Li and Rush",2024-11-20,44407,38,57,C_721,Office Supplies,1,0
+T_000267,S_00027,Evans-White,2025-10-18,27499,24,53,C_512,Raw Materials,1,0
+T_000268,S_00414,"Mosley, Orozco and Reyes",2024-12-07,36053,90,68,C_935,Logistics,1,0
+T_000269,S_00302,Gordon-Moreno,2025-04-12,20398,21,81,C_384,Logistics,0,0
+T_000270,S_00327,Ferguson Ltd,2025-04-28,6616,62,55,C_461,IT Equipment,0,0
+T_000271,S_00287,"Chan, Harris and Wilson",2025-07-10,22654,64,66,C_608,IT Equipment,0,0
+T_000272,S_00084,"Ferrell, Hill and Moore",2025-09-24,41812,11,91,C_977,Medical Devices,0,0
+T_000273,S_00295,Franklin-Ramsey,2025-04-01,2230,1,63,C_736,Medical Devices,0,1
+T_000274,S_00016,"Harris, Davies and Turner",2025-08-08,9375,23,68,C_630,Medical Devices,0,0
+T_000275,S_00015,Foster-Price,2025-08-14,15543,37,67,C_589,Logistics,0,0
+T_000276,S_00206,Young-Anderson,2025-06-17,23182,12,91,C_817,Raw Materials,0,0
+T_000277,S_00375,Johnson-Quinn,2025-05-30,37047,58,62,C_175,Raw Materials,0,0
+T_000278,S_00279,"Jackson, Johnson and Rogers",2024-11-20,26248,75,97,C_776,Logistics,0,0
+T_000279,S_00123,Johnson-French,2025-08-28,32728,19,90,C_742,Logistics,0,0
+T_000280,S_00383,"Hall, Hanson and Mcdonald",2025-08-26,37822,75,65,C_809,Office Supplies,0,0
+T_000281,S_00342,Miller-Olson,2025-06-17,29901,38,92,C_617,IT Equipment,0,0
+T_000282,S_00475,Garcia-Clark,2025-05-23,32252,88,55,C_290,IT Equipment,0,0
+T_000283,S_00490,Sims Inc,2024-12-11,38993,39,71,C_803,IT Equipment,0,0
+T_000284,S_00279,"Jackson, Stewart and Blake",2024-11-07,38895,81,73,C_458,Medical Devices,0,0
+T_000285,S_00063,"Anderson, Nguyen and Velasquez",2025-05-10,20958,72,92,C_126,Medical Devices,0,0
+T_000286,S_00017,Hernandez-Warner,2025-02-21,44868,36,63,C_497,IT Equipment,0,0
+T_000287,S_00269,Wyatt-Haas,2025-02-01,12409,42,98,C_311,Office Supplies,0,0
+T_000288,S_00427,Romero-Jones,2025-09-25,10853,86,88,C_930,IT Equipment,0,0
+T_000289,S_00350,Collins Ltd,2025-08-19,20782,74,86,C_573,Logistics,0,0
+T_000290,S_00179,Cunningham Inc,2025-02-06,14938,75,96,C_679,Office Supplies,0,0
+T_000291,S_00443,Jackson-Clark,2025-01-04,47304,71,51,C_568,Office Supplies,0,0
+T_000292,S_00263,Aguirre-Porter,2025-03-03,42351,42,63,C_103,Office Supplies,0,0
+T_000293,S_00056,"Reynolds, Johnson and Barnes",2025-01-08,9704,77,93,C_803,Logistics,0,0
+T_000294,S_00337,Savage-Nichols,2025-08-31,14104,0,55,C_505,Raw Materials,0,1
+T_000295,S_00357,Williams-Snyder,2025-08-23,7168,73,65,C_257,IT Equipment,0,0
+T_000296,S_00449,Blanchard-Harris,2025-01-08,37559,62,98,C_223,Raw Materials,0,0
+T_000297,S_00039,Lee Ltd,2024-11-28,34603,4,57,C_536,IT Equipment,0,1
+T_000298,S_00285,"Hayes, Escobar and Davis",2025-04-06,36639,13,80,C_197,IT Equipment,0,0
+T_000299,S_00390,Parker Inc,2025-07-25,23999,11,80,C_538,Medical Devices,0,0
+T_000300,S_00230,Moore-Bailey,2025-07-30,32731,53,98,C_488,Logistics,0,0
+T_000301,S_00101,Buck LLC,2025-04-15,48499,32,65,C_509,Raw Materials,1,0
+T_000302,S_00167,Hernandez-Sims,2024-12-31,11806,24,97,C_571,IT Equipment,0,0
+T_000303,S_00213,Parks Ltd,2025-07-23,7445,77,62,C_138,IT Equipment,0,0
+T_000304,S_00262,Walker PLC,2024-12-21,15980,86,57,C_129,Raw Materials,0,0
+T_000305,S_00315,Ward LLC,2025-05-13,6675,51,77,C_559,IT Equipment,0,0
+T_000306,S_00226,Brooks Ltd,2025-02-16,45179,60,70,C_528,Office Supplies,0,0
+T_000307,S_00253,Mosley LLC,2025-04-29,26440,49,61,C_291,IT Equipment,1,0
+T_000308,S_00085,Todd-Woods,2025-03-09,27715,79,85,C_873,Medical Devices,0,0
+T_000309,S_00029,Clayton Ltd,2024-12-18,25121,68,56,C_632,IT Equipment,0,0
+T_000310,S_00346,Moore-Baker,2025-07-20,24525,84,84,C_217,IT Equipment,0,0
+T_000311,S_00140,Nelson-Harris,2025-06-18,3273,51,50,C_295,Raw Materials,0,0
+T_000312,S_00178,Mcknight Inc,2025-10-27,23964,49,80,C_770,Raw Materials,0,0
+T_000313,S_00486,Rodriguez and Sons,2025-08-05,27184,71,91,C_436,Office Supplies,0,0
+T_000314,S_00155,Navarro Ltd,2025-01-07,46921,90,67,C_989,Raw Materials,0,0
+T_000315,S_00106,Rosario-Pierce,2025-08-22,26980,41,50,C_518,Raw Materials,1,0
+T_000316,S_00169,Mills-Young,2025-09-22,35942,43,57,C_887,Raw Materials,0,0
+T_000317,S_00016,Williams-Reilly,2025-01-14,47467,13,88,C_837,Logistics,0,0
+T_000318,S_00479,Watson-Cruz,2025-05-04,6969,27,79,C_794,Office Supplies,0,0
+T_000319,S_00349,Hart and Sons,2025-03-09,7294,37,69,C_803,Raw Materials,0,0
+T_000320,S_00086,"Young, Casey and Anderson",2025-07-25,13711,6,63,C_435,Raw Materials,0,1
+T_000321,S_00474,"Harvey, Hoffman and Crawford",2025-05-18,31402,9,92,C_388,Office Supplies,0,1
+T_000322,S_00082,Bell-Carr,2025-04-19,29172,75,84,C_790,Medical Devices,0,0
+T_000323,S_00375,Chen-Carter,2025-08-08,40328,13,62,C_494,Logistics,0,0
+T_000324,S_00205,Davis Group,2025-02-19,37875,3,100,C_217,Logistics,0,1
+T_000325,S_00496,Austin Ltd,2025-09-26,47540,33,97,C_485,Raw Materials,0,0
+T_000326,S_00038,Oneill LLC,2025-01-01,30538,19,68,C_925,Raw Materials,0,0
+T_000327,S_00492,Moyer-Wilkins,2025-06-23,38585,19,75,C_705,Medical Devices,1,0
+T_000328,S_00212,"Porter, Johnson and Sanchez",2025-06-08,49158,33,59,C_488,IT Equipment,0,0
+T_000329,S_00321,Perez-Larson,2025-10-14,34716,31,67,C_108,Office Supplies,0,0
+T_000330,S_00440,Hampton and Sons,2025-09-29,17477,84,95,C_813,Raw Materials,0,0
+T_000331,S_00190,Jenkins PLC,2025-06-23,47258,73,87,C_587,Raw Materials,0,0
+T_000332,S_00334,Jones Ltd,2024-11-12,41597,43,70,C_122,Raw Materials,0,0
+T_000333,S_00496,"Osborne, Rojas and Salinas",2025-01-17,23274,89,90,C_348,Logistics,1,0
+T_000334,S_00341,Baird Ltd,2025-09-20,3237,70,96,C_196,Medical Devices,0,0
+T_000335,S_00247,"Myers, Ewing and Mendoza",2025-05-31,32758,21,82,C_305,IT Equipment,0,0
+T_000336,S_00286,"Paul, Kramer and Nelson",2025-05-14,14444,47,58,C_491,Office Supplies,0,0
+T_000337,S_00242,"Lawrence, Morgan and Logan",2025-08-11,32405,68,95,C_678,Office Supplies,0,0
+T_000338,S_00338,Oconnor-Mullen,2025-02-25,9680,45,91,C_875,Raw Materials,1,0
+T_000339,S_00249,"Kelley, Chavez and Baker",2024-11-06,39651,87,78,C_370,Medical Devices,0,0
+T_000340,S_00280,"Vincent, Jimenez and Krause",2025-09-25,37395,14,59,C_410,IT Equipment,0,0
+T_000341,S_00036,Gonzales-Webb,2024-11-22,41987,49,90,C_380,Medical Devices,0,0
+T_000342,S_00315,"Chen, Freeman and Gibson",2025-04-01,17389,16,87,C_617,Medical Devices,0,0
+T_000343,S_00420,Lowe-Hall,2025-02-03,33987,50,80,C_547,Logistics,0,0
+T_000344,S_00190,"Bell, Parker and Carrillo",2025-10-23,20352,40,88,C_349,Logistics,0,0
+T_000345,S_00275,Hines-Scott,2025-09-23,10186,24,69,C_392,IT Equipment,0,0
+T_000346,S_00084,Webster and Sons,2025-02-02,33306,67,73,C_923,Medical Devices,0,0
+T_000347,S_00172,Russo-Cooper,2025-07-23,27195,11,79,C_497,Medical Devices,0,0
+T_000348,S_00038,Barron Inc,2025-04-01,38621,32,68,C_316,Medical Devices,0,0
+T_000349,S_00013,Mcdonald-Miller,2025-05-13,18588,44,86,C_758,IT Equipment,0,0
+T_000350,S_00349,Jones Group,2025-06-01,2923,77,57,C_338,Office Supplies,0,0
+T_000351,S_00360,"Roth, Watkins and Mccoy",2025-04-30,27049,87,60,C_312,IT Equipment,0,0
+T_000352,S_00229,Ford-King,2025-03-10,9886,27,96,C_374,Raw Materials,0,0
+T_000353,S_00479,Flores-Choi,2024-12-05,1084,43,52,C_337,Logistics,0,0
+T_000354,S_00366,"Stark, Kelly and Miller",2025-05-05,46166,40,77,C_403,IT Equipment,0,0
+T_000355,S_00293,Bishop Ltd,2025-04-23,46191,52,60,C_247,Raw Materials,0,0
+T_000356,S_00496,Foster PLC,2025-09-16,27768,55,56,C_240,Raw Materials,0,0
+T_000357,S_00314,Craig-Wheeler,2025-10-17,41377,74,80,C_509,Medical Devices,1,0
+T_000358,S_00317,Hall Inc,2025-07-17,4893,67,96,C_858,Medical Devices,0,0
+T_000359,S_00319,Holder LLC,2025-05-09,24012,33,63,C_599,Medical Devices,0,0
+T_000360,S_00339,"Casey, Smith and Colon",2025-04-12,18726,3,61,C_347,Raw Materials,0,1
+T_000361,S_00005,Smith and Sons,2025-05-15,8977,7,85,C_162,Raw Materials,0,1
+T_000362,S_00123,Rogers-Sanchez,2024-11-28,2549,69,67,C_588,Medical Devices,0,0
+T_000363,S_00067,Walker-Simpson,2025-04-28,45473,49,75,C_763,Logistics,0,0
+T_000364,S_00310,Bailey LLC,2025-06-07,20781,17,60,C_162,IT Equipment,0,0
+T_000365,S_00451,Contreras and Sons,2025-06-17,17096,2,82,C_962,Raw Materials,0,1
+T_000366,S_00045,Scott-Smith,2024-11-16,10268,86,60,C_568,Logistics,1,0
+T_000367,S_00236,"Burns, Anderson and Rocha",2024-12-20,27953,43,54,C_489,IT Equipment,0,0
+T_000368,S_00489,Mcbride and Sons,2025-03-08,46967,51,89,C_480,Medical Devices,0,0
+T_000369,S_00276,Mitchell-Berg,2024-11-18,26725,13,74,C_940,IT Equipment,0,0
+T_000370,S_00145,"Vargas, Ruiz and Perry",2025-06-25,20022,49,88,C_956,Raw Materials,1,0
+T_000371,S_00072,Alexander-Garza,2025-10-24,13608,9,58,C_520,IT Equipment,0,1
+T_000372,S_00078,"Gregory, Mccarty and Wright",2025-04-11,24790,23,50,C_880,Office Supplies,0,0
+T_000373,S_00189,"Jones, Petty and Maldonado",2025-07-23,39631,72,54,C_721,Logistics,0,0
+T_000374,S_00177,Pollard Group,2025-07-13,9158,74,85,C_546,Medical Devices,0,0
+T_000375,S_00084,"Daniel, Nelson and Hayes",2025-04-26,22622,89,81,C_703,IT Equipment,0,0
+T_000376,S_00129,"Oneill, Hudson and Murphy",2025-09-13,4457,86,80,C_945,Medical Devices,0,0
+T_000377,S_00115,White Group,2025-09-30,12350,88,62,C_236,Raw Materials,0,0
+T_000378,S_00177,Parker-Thompson,2025-02-03,14933,46,96,C_432,Raw Materials,0,0
+T_000379,S_00419,Miller PLC,2025-09-06,22989,42,66,C_371,Logistics,1,0
+T_000380,S_00436,Martinez-Wilson,2025-01-18,45492,78,63,C_915,Office Supplies,1,0
+T_000381,S_00363,Harris Inc,2025-04-06,11241,47,89,C_234,IT Equipment,0,0
+T_000382,S_00189,Powell Inc,2025-01-20,28918,25,82,C_886,Office Supplies,1,0
+T_000383,S_00037,"Morton, Campbell and Patel",2024-12-31,28435,13,85,C_549,Logistics,0,0
+T_000384,S_00284,Chapman Group,2025-02-16,1476,20,80,C_428,Office Supplies,0,0
+T_000385,S_00273,"Chapman, Vasquez and Campos",2024-12-03,8194,21,73,C_468,Raw Materials,0,0
+T_000386,S_00158,Miller-Lewis,2025-05-14,20095,38,57,C_350,IT Equipment,0,0
+T_000387,S_00115,"Rivera, Scott and Quinn",2025-04-29,45050,14,73,C_704,Logistics,0,0
+T_000388,S_00114,Brady and Sons,2025-06-29,33697,64,52,C_506,Office Supplies,0,0
+T_000389,S_00078,"Burch, Collins and Li",2024-11-05,4900,42,92,C_906,Logistics,0,0
+T_000390,S_00247,"Smith, Howell and Murphy",2025-08-06,24306,50,86,C_989,Medical Devices,0,0
+T_000391,S_00387,Johnson LLC,2025-05-20,31593,71,99,C_399,Logistics,0,0
+T_000392,S_00342,Navarro-Roberts,2025-09-09,30920,10,65,C_751,Office Supplies,0,0
+T_000393,S_00001,Schmitt LLC,2025-05-04,34470,55,62,C_525,Raw Materials,0,0
+T_000394,S_00001,"Russell, Ashley and Morales",2025-07-09,30960,66,76,C_981,Medical Devices,0,0
+T_000395,S_00001,"Hayes, Walton and Dennis",2025-10-07,45137,74,93,C_459,Logistics,0,0
+T_000396,S_00212,Jones Group,2025-05-28,24789,38,56,C_367,Office Supplies,0,0
+T_000397,S_00176,"Duke, Haas and Kirk",2025-05-30,12411,2,51,C_418,Medical Devices,0,1
+T_000398,S_00444,Mclaughlin-Kline,2025-07-24,1678,56,81,C_850,Office Supplies,0,0
+T_000399,S_00454,Moore Group,2025-07-04,18791,46,77,C_660,Medical Devices,0,0
+T_000400,S_00491,"Villa, Paul and Taylor",2025-06-18,47849,72,58,C_940,Medical Devices,0,0
+T_000401,S_00320,"Hoffman, Steele and Weber",2025-09-19,33837,29,91,C_272,IT Equipment,0,0
+T_000402,S_00164,Wade-Hopkins,2025-09-27,21838,17,82,C_375,Office Supplies,1,0
+T_000403,S_00418,Ellis Ltd,2025-10-25,40006,84,77,C_904,Office Supplies,0,0
+T_000404,S_00012,Arroyo-Gamble,2025-09-17,14419,67,57,C_832,Logistics,0,0
+T_000405,S_00288,Mcguire LLC,2025-09-12,14398,30,50,C_715,IT Equipment,0,0
+T_000406,S_00242,"Cooper, Davis and Horne",2025-05-29,12210,55,64,C_454,Office Supplies,0,0
+T_000407,S_00151,"Richardson, Reed and Mejia",2024-12-17,25958,17,93,C_266,Office Supplies,0,0
+T_000408,S_00252,Caldwell-Cox,2025-01-28,1778,70,89,C_656,IT Equipment,0,0
+T_000409,S_00100,Johnson-Lewis,2025-08-06,15255,22,83,C_350,Office Supplies,0,0
+T_000410,S_00044,Moore LLC,2025-05-22,8860,70,70,C_329,Office Supplies,0,0
+T_000411,S_00213,Conley and Sons,2025-01-30,42488,50,72,C_733,IT Equipment,0,0
+T_000412,S_00034,"Moody, Wall and Hernandez",2025-06-21,24157,44,71,C_122,Logistics,1,0
+T_000413,S_00060,Martin Ltd,2025-09-13,19118,25,67,C_904,Logistics,0,0
+T_000414,S_00248,"Maldonado, Turner and Ford",2025-08-17,33588,55,67,C_457,Logistics,0,0
+T_000415,S_00425,Garza-Franco,2025-09-25,31507,55,96,C_998,Medical Devices,0,0
+T_000416,S_00499,"Knight, Valentine and Hansen",2025-08-01,40160,2,51,C_349,Medical Devices,0,1
+T_000417,S_00155,Ellis Ltd,2025-01-26,47064,32,60,C_603,IT Equipment,0,0
+T_000418,S_00379,"Wagner, Richard and Hunt",2025-01-22,47707,69,98,C_344,Logistics,0,0
+T_000419,S_00454,Sanchez PLC,2024-12-12,24685,85,94,C_990,Logistics,0,0
+T_000420,S_00326,Becker PLC,2025-09-29,37786,53,52,C_150,Logistics,0,0
+T_000421,S_00043,Smith-Gonzalez,2025-04-02,11196,19,61,C_308,IT Equipment,1,0
+T_000422,S_00010,Thompson-Berry,2024-12-06,17838,87,67,C_751,IT Equipment,0,0
+T_000423,S_00203,Moore Ltd,2024-12-18,24341,22,78,C_265,Medical Devices,0,0
+T_000424,S_00045,Walsh PLC,2025-08-20,46508,71,75,C_917,IT Equipment,0,0
+T_000425,S_00151,Reynolds Inc,2024-11-29,33597,28,76,C_136,Medical Devices,1,0
+T_000426,S_00466,"Rodriguez, Davenport and Sanchez",2024-12-11,12317,45,52,C_455,Logistics,0,0
+T_000427,S_00485,"Stephens, Davis and Sanchez",2024-12-06,1718,27,64,C_238,Medical Devices,0,0
+T_000428,S_00302,Mendoza-Phillips,2024-11-21,45529,73,98,C_274,Office Supplies,0,0
+T_000429,S_00496,West-Novak,2025-03-27,39578,33,100,C_465,IT Equipment,0,0
+T_000430,S_00321,"Schneider, King and Landry",2025-02-01,6319,89,54,C_959,Medical Devices,0,0
+T_000431,S_00165,Mcgee-Hamilton,2025-03-07,2224,17,77,C_758,Medical Devices,0,0
+T_000432,S_00308,Nguyen Ltd,2025-10-16,12150,30,83,C_621,IT Equipment,0,0
+T_000433,S_00320,Jones-Henderson,2025-04-10,17728,44,72,C_867,Medical Devices,0,0
+T_000434,S_00445,Gonzalez Ltd,2025-07-08,40066,87,73,C_371,Office Supplies,1,0
+T_000435,S_00101,Harris Ltd,2025-05-17,36625,81,93,C_934,Logistics,0,0
+T_000436,S_00487,Farrell Inc,2025-04-15,5350,80,69,C_936,Medical Devices,0,0
+T_000437,S_00066,Mcfarland Group,2025-06-26,44556,75,75,C_315,Raw Materials,0,0
+T_000438,S_00231,Preston Group,2024-11-10,45788,38,82,C_780,IT Equipment,0,0
+T_000439,S_00057,Alexander-Edwards,2025-07-27,12573,78,77,C_543,Medical Devices,0,0
+T_000440,S_00384,"Clements, Allen and Pittman",2025-05-10,19606,32,84,C_182,Logistics,1,0
+T_000441,S_00429,Dunlap-Lopez,2024-11-29,15706,59,59,C_995,Medical Devices,0,0
+T_000442,S_00114,Gill and Sons,2025-04-07,11009,8,82,C_618,Raw Materials,0,1
+T_000443,S_00444,"Campos, Gutierrez and Herrera",2025-03-22,49976,28,51,C_255,Logistics,0,0
+T_000444,S_00317,Meyer Ltd,2025-07-19,33449,27,84,C_722,Logistics,0,0
+T_000445,S_00261,Schmidt-Huber,2025-01-25,44737,0,56,C_748,Office Supplies,0,1
+T_000446,S_00161,Ross Inc,2024-11-01,18017,57,100,C_855,Raw Materials,0,0
+T_000447,S_00173,Hess LLC,2024-11-25,2537,86,58,C_389,Office Supplies,0,0
+T_000448,S_00487,Reed-Harrison,2025-04-04,2734,18,57,C_659,Medical Devices,0,0
+T_000449,S_00447,"Lopez, Castro and Ross",2025-07-11,27773,49,52,C_464,Medical Devices,0,0
+T_000450,S_00122,Wright-Hill,2025-02-25,39881,79,64,C_542,Medical Devices,1,0
+T_000451,S_00181,"Hill, Wallace and Mayer",2025-01-19,22864,29,99,C_617,Logistics,0,0
+T_000452,S_00443,Tanner-Smith,2025-05-12,2554,8,56,C_252,Logistics,0,1
+T_000453,S_00452,Ferrell LLC,2025-03-07,26367,82,71,C_906,Office Supplies,0,0
+T_000454,S_00031,"Rodriguez, Jordan and Moore",2024-11-11,46512,75,57,C_104,Medical Devices,0,0
+T_000455,S_00273,"Harper, Berry and Torres",2025-10-29,38895,75,73,C_857,IT Equipment,1,0
+T_000456,S_00463,Murray and Sons,2025-01-16,29606,72,78,C_191,Raw Materials,0,0
+T_000457,S_00207,Carter Inc,2025-02-27,21629,1,90,C_584,Office Supplies,0,1
+T_000458,S_00321,"Maxwell, Stanley and Daniel",2025-01-03,47086,4,53,C_255,Medical Devices,0,1
+T_000459,S_00122,Bradshaw LLC,2025-05-11,5683,7,71,C_300,Raw Materials,0,1
+T_000460,S_00010,"Valentine, Oconnor and Boyer",2024-11-28,35379,35,73,C_915,Medical Devices,0,0
+T_000461,S_00080,Bates-Anderson,2025-07-30,26336,21,81,C_993,Logistics,1,0
+T_000462,S_00082,"Moore, Fernandez and Craig",2025-03-01,18036,15,51,C_525,Medical Devices,0,0
+T_000463,S_00281,Hale-Dennis,2025-01-14,8392,77,94,C_511,Medical Devices,0,0
+T_000464,S_00239,Hansen-Frank,2024-11-10,14572,35,52,C_887,Raw Materials,0,0
+T_000465,S_00451,Hart-Pope,2025-05-16,5077,59,53,C_390,Logistics,0,0
+T_000466,S_00242,Collier Ltd,2025-08-15,5176,24,87,C_734,Medical Devices,0,0
+T_000467,S_00300,Powell-Gray,2024-12-28,14825,83,79,C_593,Office Supplies,0,0
+T_000468,S_00452,Hayes Ltd,2025-08-19,49559,39,64,C_468,Office Supplies,0,0
+T_000469,S_00100,Martin-Hernandez,2025-06-10,18913,50,98,C_760,Logistics,0,0
+T_000470,S_00391,Farley-Diaz,2024-12-26,3556,62,88,C_902,Medical Devices,0,0
+T_000471,S_00333,"Conley, Gutierrez and Navarro",2025-03-27,15819,31,81,C_600,Office Supplies,0,0
+T_000472,S_00399,Henderson and Sons,2025-06-30,47396,45,77,C_918,IT Equipment,0,0
+T_000473,S_00445,"Adams, Lara and Gonzalez",2025-07-15,21687,53,84,C_518,Logistics,0,0
+T_000474,S_00406,Joseph-Hamilton,2025-02-13,35317,38,80,C_660,IT Equipment,0,0
+T_000475,S_00285,"Wood, Carpenter and James",2025-03-11,1723,39,69,C_430,Medical Devices,0,0
+T_000476,S_00171,Pearson-Harvey,2024-11-08,1461,72,64,C_728,IT Equipment,0,0
+T_000477,S_00271,Burke-Miles,2025-09-21,24569,21,78,C_541,Logistics,0,0
+T_000478,S_00368,Rivas-Sanchez,2024-11-29,48449,30,90,C_582,Medical Devices,0,0
+T_000479,S_00109,Arnold-Johnson,2024-12-06,42743,16,67,C_689,Office Supplies,0,0
+T_000480,S_00002,Stanley-Jackson,2025-09-06,9542,14,56,C_651,Medical Devices,0,0
+T_000481,S_00109,Robertson-Roth,2025-06-11,19487,22,56,C_364,Raw Materials,0,0
+T_000482,S_00244,"Hampton, Grant and Cooke",2025-10-27,18079,31,55,C_838,Medical Devices,0,0
+T_000483,S_00211,Perez-Webb,2025-05-02,30148,44,93,C_109,Logistics,0,0
+T_000484,S_00154,Joseph-Mann,2025-01-21,29434,66,72,C_293,Logistics,0,0
+T_000485,S_00237,Ramirez Ltd,2024-12-21,10759,73,87,C_769,Raw Materials,0,0
+T_000486,S_00149,"Todd, Brown and Townsend",2025-05-07,34280,17,70,C_782,Raw Materials,1,0
+T_000487,S_00411,"Wallace, Morrow and Chapman",2024-12-13,1563,31,82,C_782,Medical Devices,0,0
+T_000488,S_00178,"Stein, Peters and Turner",2025-01-10,35384,13,61,C_473,IT Equipment,0,0
+T_000489,S_00426,Myers Ltd,2025-07-01,43267,64,57,C_751,IT Equipment,1,0
+T_000490,S_00054,Roberts-Garcia,2024-12-20,8371,66,81,C_401,Logistics,0,0
+T_000491,S_00228,"Wright, Wagner and Knox",2025-04-01,46796,40,86,C_524,IT Equipment,0,0
+T_000492,S_00014,"Donovan, Kim and Hernandez",2025-03-02,29741,75,73,C_812,IT Equipment,0,0
+T_000493,S_00215,Frye-Wiggins,2025-10-14,40035,27,86,C_572,Medical Devices,0,0
+T_000494,S_00139,Andrews Inc,2025-01-13,28519,29,67,C_645,IT Equipment,0,0
+T_000495,S_00322,"Taylor, Mitchell and Reid",2024-12-10,31280,61,63,C_412,Raw Materials,0,0
+T_000496,S_00024,Lloyd-Martin,2025-03-25,7854,13,65,C_681,Office Supplies,0,0
+T_000497,S_00479,Parks-Miller,2025-03-09,23210,83,62,C_124,Raw Materials,0,0
+T_000498,S_00164,Gibson-Malone,2025-06-29,28217,22,51,C_597,Logistics,0,0
+T_000499,S_00491,Yang-Jones,2025-02-20,42482,8,64,C_804,IT Equipment,0,1
+T_000500,S_00429,Oneill LLC,2025-09-27,34991,46,89,C_293,Logistics,0,0
+T_000501,S_00418,Johnson-Hull,2025-02-12,28877,72,93,C_993,Logistics,0,0
+T_000502,S_00412,"Murillo, Brown and Brown",2025-07-22,1606,71,83,C_540,Office Supplies,0,0
+T_000503,S_00061,Wilson and Sons,2025-10-27,9430,87,78,C_462,Medical Devices,0,0
+T_000504,S_00407,Mcdaniel Group,2025-01-04,48721,74,78,C_272,Office Supplies,1,0
+T_000505,S_00224,Williams Inc,2025-01-23,19351,51,86,C_413,Raw Materials,1,0
+T_000506,S_00479,Goodwin-Blair,2025-04-14,43599,28,90,C_690,IT Equipment,0,0
+T_000507,S_00271,"Brennan, Michael and Ayers",2025-01-28,35450,69,74,C_757,Medical Devices,1,0
+T_000508,S_00375,"Evans, Stewart and Norris",2025-02-23,25879,8,75,C_879,Office Supplies,0,1
+T_000509,S_00385,Galloway Group,2025-06-10,31857,40,65,C_409,IT Equipment,0,0
+T_000510,S_00066,"Jackson, Vasquez and Andrews",2025-04-07,10118,49,72,C_989,Office Supplies,0,0
+T_000511,S_00164,Taylor Ltd,2025-03-28,36987,16,87,C_239,Raw Materials,0,0
+T_000512,S_00412,"Cardenas, Austin and Jensen",2025-05-04,40513,68,85,C_346,Logistics,0,0
+T_000513,S_00066,Evans-Woods,2025-05-22,26176,64,87,C_153,IT Equipment,0,0
+T_000514,S_00259,"Brown, Figueroa and Bird",2025-02-25,43936,32,61,C_587,Logistics,0,0
+T_000515,S_00028,Cruz-Howell,2025-01-18,6735,79,79,C_739,Office Supplies,0,0
+T_000516,S_00468,Randall-Phillips,2024-11-09,24471,21,92,C_629,Raw Materials,0,0
+T_000517,S_00212,"Nelson, Thompson and Daniel",2024-11-18,23093,36,97,C_433,Office Supplies,1,0
+T_000518,S_00245,Smith Inc,2025-10-20,16736,50,78,C_409,Logistics,0,0
+T_000519,S_00083,"Brown, Fields and Daniels",2024-11-09,26622,76,87,C_433,Logistics,0,0
+T_000520,S_00041,Woods-Best,2025-03-30,31005,72,62,C_627,IT Equipment,0,0
+T_000521,S_00453,Gregory Group,2025-07-09,43580,72,77,C_313,Office Supplies,1,0
+T_000522,S_00055,"Mitchell, Fitzgerald and Munoz",2025-01-03,8022,19,51,C_901,Logistics,0,0
+T_000523,S_00280,Miller PLC,2024-11-09,8497,82,77,C_163,IT Equipment,0,0
+T_000524,S_00449,Gordon Group,2025-09-18,8698,50,84,C_624,IT Equipment,0,0
+T_000525,S_00153,"Miller, Moore and Gardner",2025-03-20,43820,23,62,C_202,Medical Devices,0,0
+T_000526,S_00237,Stevens-Guerra,2025-03-27,44688,61,53,C_164,IT Equipment,1,0
+T_000527,S_00486,Estrada Group,2025-07-30,17356,56,80,C_801,IT Equipment,0,0
+T_000528,S_00318,"Watson, Horton and Hood",2024-12-12,47960,82,55,C_993,Raw Materials,0,0
+T_000529,S_00469,"Long, Hoover and Turner",2025-03-30,14806,79,63,C_550,IT Equipment,0,0
+T_000530,S_00078,Roberts-Huff,2025-07-26,31969,76,100,C_852,IT Equipment,1,0
+T_000531,S_00440,"Freeman, Sherman and Jones",2024-12-24,38472,89,63,C_416,IT Equipment,0,0
+T_000532,S_00076,Anderson Inc,2025-07-07,9903,19,89,C_624,Medical Devices,0,0
+T_000533,S_00152,Lopez LLC,2025-10-21,42230,84,64,C_559,Logistics,0,0
+T_000534,S_00478,Gill and Sons,2025-10-30,28615,7,60,C_669,IT Equipment,0,1
+T_000535,S_00408,Cunningham-Schroeder,2024-11-24,45556,40,80,C_994,IT Equipment,0,0
+T_000536,S_00126,"Chapman, Perez and Reed",2025-06-02,23290,54,84,C_433,Logistics,0,0
+T_000537,S_00096,Flores-Wilson,2025-01-02,34858,76,57,C_502,Raw Materials,0,0
+T_000538,S_00496,Washington-Johnson,2024-12-23,4810,51,91,C_630,Office Supplies,0,0
+T_000539,S_00321,"King, Harrison and Bush",2025-07-01,3460,17,57,C_360,Medical Devices,0,0
+T_000540,S_00267,Morris-Steele,2025-01-06,18268,77,66,C_356,Medical Devices,0,0
+T_000541,S_00138,Anderson Group,2025-08-25,10890,48,76,C_123,Medical Devices,1,0
+T_000542,S_00011,Cooper-Chandler,2025-07-04,28957,15,85,C_652,Medical Devices,0,0
+T_000543,S_00077,Campbell-Rivera,2025-03-10,10478,68,68,C_698,IT Equipment,0,0
+T_000544,S_00148,Baker-Smith,2025-06-26,18443,61,96,C_632,Medical Devices,1,0
+T_000545,S_00250,"Clark, Robbins and Miller",2025-08-12,39057,68,78,C_677,Logistics,0,0
+T_000546,S_00451,Zimmerman-Montgomery,2024-12-10,5400,19,74,C_252,IT Equipment,0,0
+T_000547,S_00383,Clayton and Sons,2025-03-23,15694,75,93,C_521,Office Supplies,0,0
+T_000548,S_00172,Romero-Santana,2024-12-04,9775,57,55,C_804,Logistics,0,0
+T_000549,S_00020,Jones Group,2025-06-05,7757,46,60,C_699,IT Equipment,0,0
+T_000550,S_00348,Greene-Frye,2025-06-02,20662,66,98,C_739,Medical Devices,0,0
+T_000551,S_00374,Harrison and Sons,2025-10-16,40746,88,60,C_823,Medical Devices,0,0
+T_000552,S_00459,Schmidt Inc,2025-03-24,38244,64,68,C_160,Medical Devices,0,0
+T_000553,S_00439,Ross-Anderson,2025-02-27,43518,49,87,C_800,Medical Devices,0,0
+T_000554,S_00093,Wilson-Brown,2024-12-25,14348,0,92,C_251,Medical Devices,0,1
+T_000555,S_00320,Walker LLC,2025-06-17,28954,22,69,C_417,Medical Devices,0,0
+T_000556,S_00423,"Cisneros, Hunter and Porter",2025-04-03,1603,41,77,C_510,Office Supplies,0,0
+T_000557,S_00314,Howard LLC,2024-12-28,49675,62,74,C_485,IT Equipment,0,0
+T_000558,S_00342,Bates Ltd,2025-06-22,44367,71,57,C_238,Logistics,0,0
+T_000559,S_00385,"Merritt, Castillo and Baird",2025-10-03,17222,64,66,C_429,Medical Devices,0,0
+T_000560,S_00285,Briggs-Peters,2025-04-30,36401,6,99,C_178,Raw Materials,0,1
+T_000561,S_00436,Vargas-Woodard,2025-07-17,25172,43,70,C_483,IT Equipment,1,0
+T_000562,S_00059,Wright-Novak,2025-01-31,2220,24,94,C_849,Office Supplies,1,0
+T_000563,S_00024,"Jennings, Smith and Lamb",2025-01-14,38576,49,51,C_174,Logistics,0,0
+T_000564,S_00259,Kline-Parks,2025-04-12,18090,27,57,C_641,Office Supplies,0,0
+T_000565,S_00392,Boyd Group,2025-04-08,16065,49,73,C_355,Office Supplies,0,0
+T_000566,S_00446,Stewart-Snow,2024-10-31,30065,55,77,C_307,Office Supplies,0,0
+T_000567,S_00279,"Sutton, Park and Harper",2025-02-03,9511,33,78,C_717,Raw Materials,0,0
+T_000568,S_00419,Gutierrez-Rodriguez,2024-12-26,24317,87,58,C_562,Logistics,0,0
+T_000569,S_00386,Smith-Peterson,2024-11-08,48010,71,93,C_475,Medical Devices,0,0
+T_000570,S_00357,Galvan-Adams,2025-10-05,16195,48,76,C_897,Raw Materials,0,0
+T_000571,S_00155,Cline-Tucker,2025-07-09,17570,80,64,C_629,Office Supplies,0,0
+T_000572,S_00214,Vega LLC,2025-10-09,14895,82,53,C_953,Medical Devices,0,0
+T_000573,S_00243,Graham-Cook,2025-03-22,12447,86,73,C_886,Office Supplies,0,0
+T_000574,S_00181,"Carroll, Petersen and Anderson",2025-08-30,16858,54,99,C_110,Logistics,0,0
+T_000575,S_00131,Meyer-Hall,2025-05-13,26762,63,97,C_647,Logistics,0,0
+T_000576,S_00454,"Jackson, Cline and Bowen",2024-12-22,23271,24,77,C_457,Medical Devices,0,0
+T_000577,S_00257,Stewart-Adams,2025-09-26,16525,57,72,C_873,IT Equipment,0,0
+T_000578,S_00495,Brown Ltd,2025-09-12,29935,32,58,C_779,Office Supplies,0,0
+T_000579,S_00185,"Hamilton, Sanchez and Garcia",2025-05-23,8377,1,73,C_495,Raw Materials,0,1
+T_000580,S_00047,Rowland Inc,2025-08-04,33575,18,65,C_471,Logistics,0,0
+T_000581,S_00470,"Morgan, Marks and Hart",2025-01-18,1987,41,58,C_315,Raw Materials,0,0
+T_000582,S_00168,Burke PLC,2025-04-18,2596,40,97,C_371,Raw Materials,0,0
+T_000583,S_00423,Hendricks-Mcmillan,2025-01-29,12933,30,81,C_526,Logistics,1,0
+T_000584,S_00378,Berger-Moore,2025-10-26,29546,23,97,C_739,Office Supplies,0,0
+T_000585,S_00267,Carter Ltd,2025-01-02,15729,41,75,C_230,Raw Materials,0,0
+T_000586,S_00281,Gross PLC,2025-05-10,37105,78,76,C_431,Medical Devices,1,0
+T_000587,S_00151,Collier PLC,2024-11-09,47583,64,100,C_733,Logistics,0,0
+T_000588,S_00058,"Cox, Lee and Meyer",2024-12-31,11721,21,92,C_721,IT Equipment,0,0
+T_000589,S_00349,Kelley Inc,2025-03-02,6824,77,84,C_265,Raw Materials,0,0
+T_000590,S_00320,Thomas PLC,2025-09-17,13146,66,62,C_946,Medical Devices,0,0
+T_000591,S_00207,Perry-Cline,2025-03-17,39817,2,50,C_347,Raw Materials,0,1
+T_000592,S_00281,"Conley, Smith and Ross",2025-09-26,18804,40,56,C_417,Logistics,0,0
+T_000593,S_00055,Brown-Gomez,2024-11-08,42446,25,64,C_797,IT Equipment,0,0
+T_000594,S_00101,"Johnson, Chang and Wilson",2025-10-18,6220,76,92,C_145,IT Equipment,0,0
+T_000595,S_00239,Floyd-Silva,2024-12-27,17689,60,93,C_322,Raw Materials,0,0
+T_000596,S_00211,Olson-Hill,2025-05-17,6697,67,72,C_518,Medical Devices,1,0
+T_000597,S_00338,"Barrera, Calderon and Luna",2025-10-06,37692,54,69,C_851,Raw Materials,0,0
+T_000598,S_00444,Thompson-Smith,2025-06-20,29323,85,92,C_594,Raw Materials,0,0
+T_000599,S_00161,Sanchez PLC,2025-02-07,46626,68,71,C_564,Raw Materials,0,0
+T_000600,S_00215,Warner-Vasquez,2025-05-29,37628,11,92,C_699,Logistics,0,0
+T_000601,S_00446,"Marquez, Chang and Willis",2025-05-05,2534,30,65,C_412,Raw Materials,0,0
+T_000602,S_00374,"Tanner, Graves and Leon",2025-05-27,48886,84,61,C_627,Logistics,0,0
+T_000603,S_00347,Nelson-Reid,2024-11-14,34573,80,94,C_431,Office Supplies,0,0
+T_000604,S_00478,Harvey Ltd,2024-12-29,48561,87,61,C_658,IT Equipment,0,0
+T_000605,S_00453,Moore and Sons,2024-12-11,31981,51,100,C_987,Medical Devices,0,0
+T_000606,S_00160,Carter Inc,2025-02-07,4819,37,63,C_929,Raw Materials,0,0
+T_000607,S_00488,Fields-Carter,2025-01-07,28838,62,50,C_595,Raw Materials,0,0
+T_000608,S_00026,Kelly-Martin,2025-07-27,13269,79,81,C_128,Raw Materials,0,0
+T_000609,S_00026,Woods-Castro,2025-07-27,40013,78,92,C_824,Medical Devices,0,0
+T_000610,S_00288,Yates-Martinez,2025-01-24,5265,85,71,C_420,Raw Materials,0,0
+T_000611,S_00075,Jimenez-Johnson,2024-12-07,48628,21,83,C_181,Office Supplies,0,0
+T_000612,S_00447,"Kelly, Haley and Johnson",2025-07-21,17876,61,50,C_971,Medical Devices,0,0
+T_000613,S_00425,"Gill, Meyer and Brock",2024-11-04,48393,87,55,C_114,Logistics,0,0
+T_000614,S_00379,Taylor and Sons,2024-11-24,49702,75,80,C_724,Office Supplies,0,0
+T_000615,S_00123,"Chapman, Molina and Hernandez",2025-06-01,49923,71,98,C_834,IT Equipment,0,0
+T_000616,S_00055,Donaldson-Chapman,2025-03-18,49917,64,61,C_944,Office Supplies,0,0
+T_000617,S_00407,Castaneda Ltd,2025-06-30,25555,68,97,C_287,Office Supplies,0,0
+T_000618,S_00412,Howe LLC,2025-06-22,3547,67,66,C_741,Medical Devices,0,0
+T_000619,S_00180,Cline and Sons,2025-03-04,22579,8,86,C_369,Logistics,0,1
+T_000620,S_00241,Coleman LLC,2025-05-16,33919,17,75,C_799,Office Supplies,0,0
+T_000621,S_00020,Young and Sons,2025-05-20,46935,58,64,C_490,Office Supplies,0,0
+T_000622,S_00429,"Smith, Hicks and Reed",2025-09-29,44419,73,80,C_249,Logistics,0,0
+T_000623,S_00288,Knox-Curry,2025-08-26,18640,74,58,C_823,IT Equipment,0,0
+T_000624,S_00218,"Mcdaniel, Carlson and Baker",2024-11-19,4988,83,69,C_153,Logistics,0,0
+T_000625,S_00080,"Gonzalez, Lynn and Frazier",2025-05-26,39097,39,56,C_332,Medical Devices,0,0
+T_000626,S_00145,"Parks, Sampson and Jones",2025-09-13,29878,21,85,C_774,Medical Devices,0,0
+T_000627,S_00453,"Garrett, Mcbride and Watkins",2025-07-16,38930,82,63,C_651,IT Equipment,0,0
+T_000628,S_00392,Clark-Patterson,2025-04-02,46373,2,77,C_166,Raw Materials,0,1
+T_000629,S_00211,Hayes-Finley,2025-07-16,40424,66,93,C_867,Raw Materials,0,0
+T_000630,S_00416,Barker PLC,2024-12-12,29733,66,73,C_317,Logistics,0,0
+T_000631,S_00285,Hamilton LLC,2025-07-05,25666,27,75,C_551,Raw Materials,0,0
+T_000632,S_00070,Adkins-Herrera,2025-05-25,42353,62,86,C_723,Office Supplies,0,0
+T_000633,S_00273,Thompson and Sons,2024-12-26,24834,61,65,C_457,Medical Devices,0,0
+T_000634,S_00210,Browning-Jones,2025-10-30,38646,87,66,C_959,Logistics,0,0
+T_000635,S_00310,Palmer Group,2025-08-25,41663,45,94,C_878,Logistics,0,0
+T_000636,S_00222,Perez-Burgess,2024-12-29,40297,19,62,C_618,IT Equipment,0,0
+T_000637,S_00463,"Perez, Robinson and Simpson",2025-05-29,46692,80,59,C_485,Medical Devices,0,0
+T_000638,S_00315,"Larson, Young and Romero",2025-09-25,10546,48,55,C_753,IT Equipment,0,0
+T_000639,S_00263,Coffey Ltd,2025-10-05,16992,29,55,C_243,Medical Devices,0,0
+T_000640,S_00243,Willis Group,2025-03-01,20967,41,83,C_191,Medical Devices,0,0
+T_000641,S_00139,Bauer-Ford,2025-09-30,41774,86,63,C_326,Logistics,0,0
+T_000642,S_00013,"Rogers, Anderson and Anderson",2025-07-28,47935,32,65,C_847,IT Equipment,1,0
+T_000643,S_00141,Herring Inc,2025-10-09,34917,51,70,C_846,Office Supplies,0,0
+T_000644,S_00359,Gardner and Sons,2025-03-31,27451,5,69,C_215,IT Equipment,0,1
+T_000645,S_00164,Johnson-Nguyen,2025-08-30,20647,27,79,C_847,Office Supplies,0,0
+T_000646,S_00194,"Young, Watkins and Nolan",2025-04-16,38073,8,93,C_387,Office Supplies,1,1
+T_000647,S_00451,Smith-Ochoa,2025-01-27,49399,32,86,C_336,Logistics,0,0
+T_000648,S_00490,Cook-Wagner,2025-06-27,30362,0,73,C_401,Raw Materials,0,1
+T_000649,S_00495,"Boyd, Jones and Johnson",2024-12-27,30337,57,70,C_438,Logistics,0,0
+T_000650,S_00163,"Morrison, Johnson and Day",2025-03-30,45372,27,71,C_636,Raw Materials,0,0
+T_000651,S_00459,Cobb-Young,2025-01-06,7916,22,80,C_894,Logistics,0,0
+T_000652,S_00420,"Brown, Wilson and Rosales",2025-02-01,46159,44,88,C_493,Logistics,0,0
+T_000653,S_00311,Lawrence-Lane,2025-08-14,43502,43,87,C_717,IT Equipment,0,0
+T_000654,S_00088,Johnson PLC,2025-10-16,24873,43,50,C_981,Medical Devices,0,0
+T_000655,S_00212,Gonzales-Todd,2025-09-12,36055,18,77,C_470,Office Supplies,1,0
+T_000656,S_00436,Burgess-Smith,2025-09-15,26826,68,50,C_364,Logistics,0,0
+T_000657,S_00110,Whitaker-Bowman,2025-01-16,1200,4,94,C_654,Raw Materials,0,1
+T_000658,S_00076,Johnson-Warner,2024-12-29,23440,81,83,C_233,IT Equipment,0,0
+T_000659,S_00345,Rodriguez-Brown,2025-08-17,46908,16,54,C_335,Medical Devices,0,0
+T_000660,S_00296,Rivera Group,2025-10-22,30461,53,99,C_639,Logistics,0,0
+T_000661,S_00181,Campbell PLC,2025-03-21,15339,40,68,C_306,Office Supplies,0,0
+T_000662,S_00362,Harper-Martin,2025-03-30,42582,39,69,C_257,Office Supplies,0,0
+T_000663,S_00035,Livingston-Harper,2025-05-15,20370,49,71,C_814,Raw Materials,0,0
+T_000664,S_00326,Moore Inc,2025-04-10,38217,38,60,C_332,Office Supplies,0,0
+T_000665,S_00079,Burgess-Love,2025-05-31,25987,30,98,C_974,IT Equipment,0,0
+T_000666,S_00410,Holt Ltd,2025-02-19,38630,86,82,C_707,IT Equipment,0,0
+T_000667,S_00496,Owens-Clark,2025-08-25,42611,86,72,C_928,Logistics,0,0
+T_000668,S_00205,Hernandez-Brennan,2025-10-07,19726,64,71,C_212,Logistics,0,0
+T_000669,S_00052,Dougherty LLC,2025-07-08,7785,79,99,C_954,Medical Devices,0,0
+T_000670,S_00161,"Mckenzie, Lee and Wilcox",2024-11-24,48224,43,74,C_575,Office Supplies,0,0
+T_000671,S_00125,"Harvey, Obrien and Rios",2025-01-20,29403,81,64,C_574,Raw Materials,1,0
+T_000672,S_00166,Olson-Hernandez,2025-10-22,41826,28,61,C_685,Raw Materials,0,0
+T_000673,S_00193,Andrade-Robinson,2025-08-01,7276,83,85,C_981,Office Supplies,0,0
+T_000674,S_00021,"Mercer, Shelton and Walter",2025-01-14,27723,12,62,C_129,Office Supplies,0,0
+T_000675,S_00241,Hubbard-Mills,2025-03-01,20772,59,98,C_753,IT Equipment,0,0
+T_000676,S_00287,Hines-Williams,2025-08-31,3527,45,59,C_241,Logistics,1,0
+T_000677,S_00459,Hopkins-Wright,2025-01-26,12994,66,96,C_755,Raw Materials,0,0
+T_000678,S_00161,Burns-Gonzales,2025-03-19,4709,28,99,C_569,Logistics,0,0
+T_000679,S_00021,"Jordan, Wilson and Wheeler",2025-10-03,6589,3,94,C_592,Medical Devices,0,1
+T_000680,S_00004,Gardner-Mora,2025-08-26,31670,34,57,C_887,Raw Materials,1,0
+T_000681,S_00260,Evans PLC,2025-05-04,36783,67,77,C_897,Medical Devices,0,0
+T_000682,S_00238,"Berg, Hardy and Parker",2024-11-04,5021,76,78,C_168,IT Equipment,1,0
+T_000683,S_00193,Morris-Brewer,2025-02-09,43354,6,93,C_886,Raw Materials,0,1
+T_000684,S_00037,Boyle-Irwin,2025-03-09,33542,69,65,C_235,Office Supplies,0,0
+T_000685,S_00242,Walker Inc,2025-06-23,8959,5,76,C_269,Raw Materials,0,1
+T_000686,S_00004,Rice LLC,2025-04-19,13109,33,80,C_349,Medical Devices,0,0
+T_000687,S_00140,Gardner-Martin,2025-08-06,27982,47,54,C_418,IT Equipment,0,0
+T_000688,S_00316,"Soto, Diaz and Bowen",2024-12-21,19834,80,80,C_728,Office Supplies,0,0
+T_000689,S_00046,Novak LLC,2025-06-11,16439,63,71,C_266,Logistics,0,0
+T_000690,S_00030,Martinez Inc,2024-11-01,2724,63,71,C_560,Raw Materials,0,0
+T_000691,S_00223,Rodriguez LLC,2025-05-05,44800,21,61,C_763,IT Equipment,0,0
+T_000692,S_00283,Ewing LLC,2024-12-07,24440,53,89,C_485,Raw Materials,0,0
+T_000693,S_00393,Hughes-Webb,2025-05-03,16838,10,51,C_380,IT Equipment,0,0
+T_000694,S_00419,Atkins-Villegas,2025-10-31,46480,68,67,C_791,Medical Devices,0,0
+T_000695,S_00219,"Hill, Smith and Jenkins",2025-07-21,27860,86,52,C_972,Raw Materials,1,0
+T_000696,S_00200,Landry Inc,2025-05-20,5430,57,68,C_277,Medical Devices,0,0
+T_000697,S_00262,Hamilton-Rivers,2025-05-21,44767,71,61,C_153,Logistics,0,0
+T_000698,S_00098,Edwards Ltd,2025-06-10,5083,43,84,C_702,Medical Devices,1,0
+T_000699,S_00386,Hernandez-Valdez,2025-09-01,19233,21,52,C_640,Raw Materials,0,0
+T_000700,S_00111,"Oconnor, Taylor and Romero",2025-07-16,2183,71,80,C_617,Raw Materials,0,0
+T_000701,S_00192,"Fisher, Acevedo and Pham",2025-09-18,19599,68,55,C_402,Office Supplies,0,0
+T_000702,S_00495,"Estrada, Patterson and Rodriguez",2025-05-22,23854,51,66,C_677,Logistics,1,0
+T_000703,S_00421,Diaz Ltd,2025-05-06,5578,24,77,C_905,Logistics,0,0
+T_000704,S_00166,"Guerra, Martinez and Ortega",2024-11-08,32881,57,72,C_618,IT Equipment,1,0
+T_000705,S_00306,Holmes-Rodriguez,2025-02-22,22446,4,95,C_868,Office Supplies,0,1
+T_000706,S_00032,"Barrett, Duarte and Hines",2025-04-21,27462,67,58,C_130,Logistics,0,0
+T_000707,S_00361,"Armstrong, Garcia and Walker",2024-11-10,25308,2,69,C_173,Office Supplies,0,1
+T_000708,S_00394,Ward-Smith,2025-01-12,48295,68,80,C_426,IT Equipment,1,0
+T_000709,S_00097,Barnes PLC,2025-04-28,4237,25,50,C_466,Raw Materials,0,0
+T_000710,S_00018,Nash-Hall,2025-04-12,9310,8,97,C_145,Office Supplies,0,1
+T_000711,S_00318,Patel-Bell,2025-05-06,27138,7,89,C_336,Medical Devices,0,1
+T_000712,S_00214,"Murray, Robinson and Myers",2025-09-13,30750,79,69,C_611,Medical Devices,0,0
+T_000713,S_00042,Williams and Sons,2025-06-08,23286,44,90,C_144,Logistics,0,0
+T_000714,S_00178,Curtis Ltd,2025-10-28,39384,79,58,C_513,Medical Devices,0,0
+T_000715,S_00481,Fuentes-Johnson,2025-04-19,17536,22,60,C_339,Office Supplies,0,0
+T_000716,S_00223,Montes-Flores,2024-11-08,46046,49,88,C_797,Office Supplies,0,0
+T_000717,S_00283,Moreno-Patel,2025-07-03,30692,90,68,C_746,IT Equipment,0,0
+T_000718,S_00172,Watts Inc,2025-02-17,36602,59,81,C_618,IT Equipment,0,0
+T_000719,S_00185,Huff-Stone,2025-01-12,5476,12,73,C_654,Logistics,0,0
+T_000720,S_00264,"Carter, Giles and Briggs",2025-10-21,18227,34,90,C_639,Logistics,0,0
+T_000721,S_00297,"Wiggins, Morales and Hansen",2024-11-03,37313,22,99,C_476,Logistics,0,0
+T_000722,S_00431,"Jordan, Robertson and Mcdaniel",2024-12-19,9068,24,84,C_546,Logistics,0,0
+T_000723,S_00312,Gomez-Reed,2025-06-08,47121,19,96,C_305,Logistics,1,0
+T_000724,S_00385,"Norton, Whitaker and Griffin",2025-01-10,3377,87,96,C_707,Logistics,0,0
+T_000725,S_00157,Walker Group,2025-02-16,20539,80,60,C_243,Office Supplies,0,0
+T_000726,S_00230,"Torres, Jimenez and Sandoval",2025-10-28,17277,78,68,C_582,Raw Materials,0,0
+T_000727,S_00013,"Welch, Miller and Hunt",2025-10-25,39906,13,53,C_516,IT Equipment,0,0
+T_000728,S_00222,"Rice, Fox and May",2025-03-18,15424,43,64,C_573,Medical Devices,0,0
+T_000729,S_00113,Peterson Ltd,2025-03-27,26774,54,82,C_244,Medical Devices,0,0
+T_000730,S_00380,Juarez-Benson,2025-03-02,6952,32,60,C_306,Office Supplies,0,0
+T_000731,S_00431,Peck-Turner,2025-09-19,44405,39,83,C_858,Raw Materials,0,0
+T_000732,S_00156,Anderson-Reed,2025-08-18,44650,52,68,C_134,Logistics,1,0
+T_000733,S_00021,Schwartz and Sons,2025-03-03,19150,9,59,C_107,Office Supplies,0,1
+T_000734,S_00289,"Vargas, Mosley and Nichols",2025-05-25,23760,17,61,C_216,Logistics,0,0
+T_000735,S_00104,"Hart, Shaffer and Gamble",2025-10-06,27802,70,60,C_421,IT Equipment,0,0
+T_000736,S_00007,"Anderson, Carpenter and Wilson",2024-11-02,35605,59,90,C_487,Raw Materials,0,0
+T_000737,S_00313,Gordon-Thompson,2025-06-26,48849,8,75,C_176,Raw Materials,0,1
+T_000738,S_00358,"Bonilla, Brown and Miller",2025-06-30,22383,28,86,C_807,IT Equipment,0,0
+T_000739,S_00476,Robertson and Sons,2025-10-20,41073,38,62,C_729,IT Equipment,0,0
+T_000740,S_00177,Caldwell-Simmons,2025-05-23,47859,17,91,C_837,Medical Devices,0,0
+T_000741,S_00088,Gutierrez-Ware,2025-03-10,39894,42,88,C_348,IT Equipment,1,0
+T_000742,S_00240,"Nguyen, White and Garcia",2025-05-04,33473,90,64,C_618,Medical Devices,1,0
+T_000743,S_00268,Gonzales PLC,2025-09-21,30602,40,93,C_631,IT Equipment,0,0
+T_000744,S_00338,"Greene, Myers and Nguyen",2025-06-05,16800,86,85,C_492,Logistics,0,0
+T_000745,S_00023,"Hogan, Miller and Gonzalez",2024-11-23,10178,15,78,C_484,Raw Materials,0,0
+T_000746,S_00053,"Stewart, Hudson and Charles",2025-04-16,19312,27,84,C_159,IT Equipment,1,0
+T_000747,S_00108,Harris LLC,2024-12-27,30058,54,87,C_129,Raw Materials,1,0
+T_000748,S_00073,Rodriguez Inc,2025-08-31,15878,52,86,C_638,Logistics,0,0
+T_000749,S_00281,"Welch, Davidson and Ballard",2025-04-15,24531,58,64,C_439,IT Equipment,0,0
+T_000750,S_00160,Kemp PLC,2025-05-18,19119,57,80,C_709,Medical Devices,0,0
+T_000751,S_00271,Holder-Mosley,2024-12-15,8586,69,67,C_947,IT Equipment,0,0
+T_000752,S_00141,"Hunt, Walters and White",2025-07-11,16298,46,86,C_751,Logistics,0,0
+T_000753,S_00396,Garcia and Sons,2025-06-17,3877,34,84,C_210,IT Equipment,0,0
+T_000754,S_00311,Murray-Estrada,2024-11-24,31708,47,69,C_540,Raw Materials,0,0
+T_000755,S_00441,Smith Group,2025-10-20,31541,30,81,C_962,Raw Materials,0,0
+T_000756,S_00115,Kennedy Inc,2025-05-19,2083,71,57,C_510,Medical Devices,1,0
+T_000757,S_00022,"Ellison, Oneill and Yates",2025-09-08,25111,65,52,C_966,Medical Devices,0,0
+T_000758,S_00331,"Oliver, Miller and Pope",2025-06-27,38904,10,81,C_183,Medical Devices,0,0
+T_000759,S_00290,"Howell, Clark and Alexander",2024-12-15,41198,66,95,C_421,Office Supplies,0,0
+T_000760,S_00339,Banks and Sons,2025-05-02,8119,61,67,C_934,Office Supplies,0,0
+T_000761,S_00265,"Wilson, Grant and Trevino",2025-10-27,37177,81,73,C_890,Logistics,0,0
+T_000762,S_00441,Parker Inc,2025-03-10,10263,56,72,C_477,IT Equipment,0,0
+T_000763,S_00180,Cordova-Hernandez,2024-12-22,20261,73,86,C_746,Medical Devices,0,0
+T_000764,S_00486,"Hunt, Ball and Beck",2025-07-02,45122,46,76,C_506,Office Supplies,0,0
+T_000765,S_00485,Cole LLC,2024-11-26,36629,17,69,C_205,Raw Materials,0,0
+T_000766,S_00352,Cantu and Sons,2025-06-03,11010,15,88,C_184,Medical Devices,0,0
+T_000767,S_00032,Silva LLC,2025-09-05,27939,20,80,C_364,Logistics,0,0
+T_000768,S_00073,"Wells, Espinoza and Smith",2025-04-18,45907,82,52,C_135,IT Equipment,1,0
+T_000769,S_00450,Sanchez-Peterson,2025-03-06,33975,38,57,C_638,Medical Devices,0,0
+T_000770,S_00101,"Wheeler, Miranda and Lopez",2025-05-19,32027,88,63,C_445,Office Supplies,0,0
+T_000771,S_00267,Long Group,2025-10-28,41630,48,72,C_350,Logistics,0,0
+T_000772,S_00460,Ross-Brown,2025-10-11,35514,36,79,C_938,Raw Materials,0,0
+T_000773,S_00064,"Stone, Craig and Hale",2024-12-23,35475,90,73,C_517,Raw Materials,0,0
+T_000774,S_00035,"Johnson, Scott and Ramirez",2025-08-09,35288,26,87,C_927,Raw Materials,0,0
+T_000775,S_00192,"Meyer, Green and Morgan",2025-04-07,14843,57,69,C_617,Medical Devices,0,0
+T_000776,S_00288,Adams-Hernandez,2024-11-09,35467,3,54,C_744,Logistics,0,1
+T_000777,S_00038,Johnson-Murillo,2024-12-18,4040,71,79,C_160,IT Equipment,0,0
+T_000778,S_00008,Combs PLC,2025-05-28,7349,48,78,C_935,Logistics,0,0
+T_000779,S_00359,"King, Smith and Hernandez",2025-10-26,13980,13,55,C_859,Office Supplies,0,0
+T_000780,S_00392,Carter Inc,2025-06-06,11891,34,66,C_634,IT Equipment,1,0
+T_000781,S_00167,Roberts-Ball,2025-02-07,42355,27,98,C_750,Raw Materials,1,0
+T_000782,S_00223,Burnett Group,2025-10-12,12621,21,66,C_676,Logistics,0,0
+T_000783,S_00379,"Carpenter, Elliott and Willis",2025-02-08,31242,60,99,C_679,Raw Materials,0,0
+T_000784,S_00021,Koch Inc,2025-03-30,47361,30,88,C_176,Raw Materials,0,0
+T_000785,S_00305,Baxter PLC,2025-06-17,29614,13,78,C_763,Logistics,0,0
+T_000786,S_00316,"Walker, Jenkins and Allen",2025-07-25,17696,19,90,C_802,Logistics,0,0
+T_000787,S_00075,Cook-Miller,2025-07-25,16825,65,64,C_125,IT Equipment,0,0
+T_000788,S_00345,"Cline, Reyes and Ward",2024-12-10,39280,86,98,C_175,Raw Materials,0,0
+T_000789,S_00401,Willis PLC,2025-04-17,15477,20,75,C_928,Raw Materials,0,0
+T_000790,S_00355,"Byrd, Mcmillan and Weber",2025-03-16,20908,64,90,C_273,Office Supplies,0,0
+T_000791,S_00418,Barker-Obrien,2025-08-01,39226,67,54,C_783,Logistics,0,0
+T_000792,S_00158,Lee-Hunter,2025-06-08,18070,16,81,C_316,Raw Materials,0,0
+T_000793,S_00197,Brown-Clayton,2025-03-30,49289,75,63,C_959,Raw Materials,1,0
+T_000794,S_00465,"Carpenter, Scott and Finley",2025-01-09,31641,9,69,C_929,IT Equipment,0,1
+T_000795,S_00121,Ortega LLC,2025-01-17,18596,36,64,C_920,IT Equipment,0,0
+T_000796,S_00408,Thompson Group,2025-02-24,13461,29,96,C_539,Raw Materials,0,0
+T_000797,S_00255,Phillips-Johnson,2025-09-16,36862,89,78,C_507,Raw Materials,0,0
+T_000798,S_00176,Simmons and Sons,2025-01-05,13203,33,67,C_479,Office Supplies,0,0
+T_000799,S_00117,"Mcgee, Salazar and Hughes",2024-11-03,2844,20,93,C_391,IT Equipment,0,0
+T_000800,S_00040,"Harris, Estrada and Martinez",2025-05-29,9539,36,73,C_986,Medical Devices,0,0

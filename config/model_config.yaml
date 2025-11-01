@@ -1,0 +1,34 @@
+categorical_features:
+  - region
+  - industry
+  - contract_criticality
+numeric_features:
+  - annual_spend
+  - credit_score
+  - late_ratio
+  - dispute_rate
+  - avg_delay
+  - clause_risk_score
+random_forest:
+  n_estimators:
+    - 200
+    - 300
+  max_depth:
+    - null
+    - 10
+xgboost:
+  n_estimators:
+    - 200
+    - 400
+  max_depth:
+    - 3
+    - 4
+  learning_rate:
+    - 0.05
+    - 0.1
+mistral_prompt_template: |
+  You are an AI explainability assistant.
+  Prediction: {risk_level} ({confidence}%).
+  Top features: {top_features}.
+  Explain in business language why this risk was predicted.
+

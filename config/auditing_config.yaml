@@ -1,0 +1,14 @@
+data_quality_checks:
+  max_null_ratio: 0.15
+  acceptable_regions:
+    - North America
+    - Europe
+    - Asia-Pacific
+    - LATAM
+lineage_policies:
+  retain_days: 30
+  lineage_owner: data_ops
+llm_audit:
+  capture_prompt: true
+  capture_response_metadata: true
+

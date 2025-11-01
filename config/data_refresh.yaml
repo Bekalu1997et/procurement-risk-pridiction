@@ -1,0 +1,8 @@
+weekly_refresh:
+  source: data/processed/new_data_weekly.csv
+  expectation: "New file delivered every Monday 01:00 UTC"
+schedule:
+  day_of_week: sun
+  hour: 2
+  minute: 0
+

@@ -1,0 +1,6 @@
+risk_score,risk_label,probabilities,recommendation,supplier_id,company_name
+0.207,low,"{'high': np.float64(0.08666666666666667), 'low': np.float64(0.03333333333333333), 'medium': np.float64(0.88)}",Continue partnership with routine monitoring cadence.,S_00362,Lam LLC
+0.88,high,"{'high': np.float64(0.8), 'low': np.float64(0.03333333333333333), 'medium': np.float64(0.16666666666666666)}",Avoid supplier; identify alternate sourcing options.,S_00074,"Stanley, Tucker and Lee"
+0.207,low,"{'high': np.float64(0.12666666666666668), 'low': np.float64(0.06), 'medium': np.float64(0.8133333333333334)}",Continue partnership with routine monitoring cadence.,S_00375,"Hoffman, Santiago and Jenkins"
+0.207,low,"{'high': np.float64(0.08666666666666667), 'low': np.float64(0.006666666666666667), 'medium': np.float64(0.9066666666666666)}",Continue partnership with routine monitoring cadence.,S_00156,Hill Inc
+0.2,low,"{'high': np.float64(0.08), 'low': np.float64(0.08), 'medium': np.float64(0.84)}",Continue partnership with routine monitoring cadence.,S_00105,Nolan-Flynn

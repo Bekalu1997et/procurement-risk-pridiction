@@ -1,0 +1,27 @@
+supplier_master:
+  supplier_id: int
+  supplier_name: str
+  region: category
+  industry: category
+  annual_spend: float
+  credit_score: int
+  contract_criticality: category
+transactions_aggregated:
+  late_txn_ratio: float
+  dispute_rate: float
+  avg_delay: float
+  payment_delay_category: category
+contracts:
+  clause_risk_score: float
+  contract_embedding_*: vector
+model_features:
+  - region
+  - industry
+  - contract_criticality
+  - annual_spend
+  - credit_score
+  - late_ratio
+  - dispute_rate
+  - avg_delay
+  - clause_risk_score
+

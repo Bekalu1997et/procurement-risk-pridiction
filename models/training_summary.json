@@ -1,0 +1,70 @@
+{
+  "auc_macro": 0.9160551485885122,
+  "top_importances": [
+    {
+      "feature": "avg_payment_delay_days",
+      "importance": 0.1169082858429293
+    },
+    {
+      "feature": "past_disputes",
+      "importance": 0.11131813438854012
+    },
+    {
+      "feature": "financial_stability_index",
+      "importance": 0.10503091062973653
+    },
+    {
+      "feature": "delivery_score",
+      "importance": 0.046346090147043585
+    },
+    {
+      "feature": "avg_delay",
+      "importance": 0.04366606949507467
+    },
+    {
+      "feature": "avg_delivery_quality",
+      "importance": 0.04153929119879416
+    },
+    {
+      "feature": "avg_txn_amount",
+      "importance": 0.03941235345655123
+    },
+    {
+      "feature": "annual_revenue",
+      "importance": 0.03858333341854989
+    },
+    {
+      "feature": "clause_risk_score",
+      "importance": 0.038187388913328145
+    },
+    {
+      "feature": "annual_spend",
+      "importance": 0.03643766810196735
+    },
+    {
+      "feature": "contract_value",
+      "importance": 0.03606258688564652
+    },
+    {
+      "feature": "contract_duration_months",
+      "importance": 0.033680616787482985
+    },
+    {
+      "feature": "relationship_years",
+      "importance": 0.024748291402290425
+    },
+    {
+      "feature": "txn_count",
+      "importance": 0.019090046050755486
+    },
+    {
+      "feature": "late_ratio",
+      "importance": 0.018651307275160362
+    }
+  ],
+  "class_labels": [
+    "high",
+    "low",
+    "medium"
+  ]
+}

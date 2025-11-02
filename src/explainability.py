@@ -1,4 +1,4 @@
-"""Explainability utilities blending SHAP analytics with Mistral narratives."""
+"""Explainability utilities blending SHAP analytics with Ollama narratives."""
 
 from __future__ import annotations
 
@@ -10,9 +10,10 @@ import numpy as np
 import pandas as pd
 import shap
 import yaml
+import ollama
 
-import auditing
-import nlp_layer
+from . import auditing
+from . import nlp_layer
 
 
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "model_config.yaml")
@@ -20,15 +21,7 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "model_con
 
 @dataclass
 class Explanation:
-    """Container describing model explanations for presentation layers.
-    The Explanation class is a dataclass that captures the container describing model explanations for presentation layers.
-    It uses the str object to store the risk level.
-    It uses the float object to store the confidence.
-    It uses the List[Tuple[str, float]] object to store the top features.
-    It uses the List[float] object to store the shap values.
-    It uses the List[str] object to store the feature names.
-    It uses the str object to store the narrative.
-    """
+    """Container describing model explanations for presentation layers."""
 
     risk_level: str
     confidence: float
@@ -43,78 +36,94 @@ def summarize_shap_values(
     feature_names: Sequence[str],
     top_k: int = 5,
 ) -> List[Tuple[str, float]]:
-    """Return the top contributing SHAP features sorted by absolute impact.
-    The function returns the top contributing SHAP features sorted by absolute impact.
-    It uses the zip function to combine the feature names and shap values.
-    It uses the sorted function to sort the features by absolute impact.
-    It uses the lambda function to sort the features by absolute impact.
-    It also logs the SHAP values using the auditing module.
-    """
-
+    """Return the top contributing SHAP features sorted by absolute impact."""
     ranked = sorted(
         zip(feature_names, shap_values), key=lambda tpl: abs(tpl[1]), reverse=True
     )
     return ranked[:top_k]
 
 
-def _load_mistral_prompt_template() -> str:
-    """Read prompt template from config or fall back to default string.
-    The function reads the prompt template from the config file or falls back to the default string.
-    It uses the yaml library to load the config file.
-    It uses the os.path.exists function to check if the config file exists.
-    It uses the open function to read the config file.
-    It also logs the prompt template using the auditing module.
-    """
+def _build_business_prompt(risk_level: str, confidence: float, top_features: List[Tuple[str, float]]) -> str:
+    """Build conversational business-friendly prompt for LLM."""
+    feature_explanations = []
+    for feat, val in top_features[:5]:
+        clean_name = feat.replace('numeric__', '').replace('categorical__', '').replace('_', ' ').title()
+        impact = "increases" if val > 0 else "decreases"
+        feature_explanations.append(f"- {clean_name}: {abs(val):.3f} ({impact} risk)")
+    
+    features_text = "\n".join(feature_explanations)
+    
+    return f"""You are a business risk analyst explaining supplier risk predictions to procurement managers.
 
-    if os.path.exists(CONFIG_PATH):
-        with open(CONFIG_PATH, "r", encoding="utf-8") as handle:
-            config = yaml.safe_load(handle) or {}
-            template = config.get("mistral_prompt_template")
-            if template:
-                return template
-    return (
-        "You are an AI explainability assistant.\n"
-        "Prediction: {risk_level} ({confidence}%).\n"
-        "Top features: {top_features}.\n"
-        "Explain in business language why this risk was predicted."
-    )
+Risk Assessment: {risk_level.upper()} risk with {confidence:.1f}% confidence
+
+Key Contributing Factors:
+{features_text}
+
+Provide a 2-3 sentence conversational explanation in simple business language. 
+Translate technical metrics into actionable insights. 
+Avoid jargon. Be direct and professional."""
 
 
-def _call_mistral(prompt: str) -> str:
-    """Call the Mistral API if credentials are present, else mock the output.
-    The function calls the Mistral API if credentials are present, else mock the output.
-    It uses the os.getenv function to get the Mistral API key.
-    It uses the requests library to call the Mistral API.
-    It also logs the Mistral API call using the auditing module.
-    """
+def _generate_shap_summary(risk_level: str, confidence: float, top_features: List[Tuple[str, float]]) -> str:
+    """Generate SHAP-based summary as fallback when Ollama unavailable."""
+    # Build human-readable summary from SHAP values
+    risk_desc = {
+        "high": "elevated",
+        "medium": "moderate",
+        "low": "minimal"
+    }.get(risk_level.lower(), "moderate")
+    
+    # Identify top risk drivers
+    increasing = []
+    decreasing = []
+    
+    for feat, val in top_features[:3]:
+        clean_name = feat.replace('numeric__', '').replace('categorical__', '').replace('_', ' ').lower()
+        if val > 0:
+            increasing.append(f"{clean_name} (+{abs(val):.3f})")
+        else:
+            decreasing.append(f"{clean_name} (-{abs(val):.3f})")
+    
+    summary = f"This supplier presents {risk_desc} risk with {confidence:.1f}% confidence. "
+    
+    if increasing:
+        summary += f"Primary concerns: {', '.join(increasing)}. "
+    
+    if decreasing:
+        summary += f"Positive factors: {', '.join(decreasing)}. "
+    
+    # Add recommendation
+    if risk_level.lower() == "high":
+        summary += "Recommendation: Implement enhanced monitoring, request additional documentation, and consider alternative suppliers."
+    elif risk_level.lower() == "medium":
+        summary += "Recommendation: Monitor performance closely and establish clear KPIs with regular reviews."
+    else:
+        summary += "Recommendation: Maintain standard monitoring procedures with periodic reviews."
+    
+    return summary
 
-    api_key = os.getenv("MISTRAL_API_KEY")
-    if not api_key:
-        return (
-            "[Mocked Mistral Response] Based on the highlighted drivers, the supplier "
-            "shows elevated risk due to persistent payment delays and clause risk."
+
+def _call_ollama(prompt: str, risk_level: str, confidence: float, top_features: List[Tuple[str, float]]) -> str:
+    """Call Ollama tinyllama for conversational business explanations with SHAP fallback."""
+    try:
+        response = ollama.generate(
+            model="tinyllama",
+            prompt=prompt,
+            stream=False,
+            options={"temperature": 0.7}
         )
-
-    import requests  # Imported lazily to keep startup light-weight.
-
-    response = requests.post(
-        "https://api.mistral.ai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": "mistral-medium",
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "You are a helpful assistant that writes concise business narratives.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-        },
-        timeout=30,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    return payload["choices"][0]["message"]["content"]
+        result = response["response"].strip()
+        
+        # If response is too short or generic, use SHAP summary
+        if len(result) < 50:
+            return _generate_shap_summary(risk_level, confidence, top_features)
+        
+        return result
+        
+    except Exception as e:
+        # Fallback to SHAP-based summary
+        return _generate_shap_summary(risk_level, confidence, top_features)
 
 
 def build_explanation(
@@ -123,24 +132,12 @@ def build_explanation(
     shap_values: Sequence[float],
     feature_names: Sequence[str],
 ) -> Explanation:
-    """Create an `Explanation` object combining SHAP and LLM narratives.
-    The function creates an `Explanation` object combining SHAP and LLM narratives.
-    It uses the summarize_shap_values function to summarize the SHAP values.
-    It uses the round function to round the confidence.
-    It uses the _load_mistral_prompt_template function to load the prompt template.
-    It uses the _call_mistral function to call the Mistral API.
-    It also logs the explanation using the auditing module.
-    """
-
+    """Create an Explanation object combining SHAP and LLM narratives."""
     top_features = nlp_layer.summarize_shap_values(shap_values, feature_names)
     confidence = round(probabilities.get(risk_level, 0.0) * 100, 2)
 
-    prompt = _load_mistral_prompt_template().format(
-        risk_level=risk_level,
-        confidence=confidence,
-        top_features=top_features,
-    )
-    narrative = _call_mistral(prompt)
+    prompt = _build_business_prompt(risk_level, confidence, top_features)
+    narrative = _call_ollama(prompt, risk_level, confidence, top_features)
 
     auditing.persist_audit_log(
         event_type="explainability_narrative",
@@ -160,4 +157,3 @@ def build_explanation(
         feature_names=list(feature_names),
         narrative=narrative,
     )
-

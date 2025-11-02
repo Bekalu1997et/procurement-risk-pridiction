@@ -33,7 +33,7 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-import auditing
+from . import auditing
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -43,11 +43,27 @@ CONFIG_PATH = BASE_DIR / "config" / "model_config.yaml"
 
 @dataclass
 class ModelArtifacts:
-    """Captures model objects and metadata after training.
-    The ModelArtifacts class is a dataclass that captures the model objects and metadata after training.
-    It uses the Pipeline object to store the model.
-    It uses the Dict[str, Any] object to store the report.
-    It also logs the training summary using the auditing module.
+    """Container for trained model artifacts and evaluation metrics.
+    
+    This dataclass encapsulates everything needed to persist and evaluate
+    a trained machine learning model in production.
+    
+    Attributes
+    ----------
+    model_name : str
+        Identifier for the model (e.g., 'random_forest', 'xgboost')
+    pipeline : Pipeline
+        Complete sklearn Pipeline including preprocessing and model
+    report : Dict[str, Any]
+        Classification report with precision, recall, F1 scores per class
+    
+    Example
+    -------
+    >>> artifacts = ModelArtifacts(
+    ...     model_name="random_forest",
+    ...     pipeline=trained_pipeline,
+    ...     report={"accuracy": 0.85, "macro avg": {"f1-score": 0.83}}
+    ... )
     """
 
     model_name: str
@@ -56,10 +72,24 @@ class ModelArtifacts:
 
 
 def _load_config() -> Dict[str, Any]:
-    """Load hyperparameter configuration for models from a YAML file if present, otherwise use defaults.
-    The function loads the hyperparameter configuration for models from a YAML file if present, otherwise use defaults.
-    It uses the yaml library to load the configuration.
-    It also logs the hyperparameter configuration using the auditing module.
+    """Load model hyperparameter configuration from YAML or use defaults.
+    
+    Reads config/model_config.yaml for hyperparameter grids and feature lists.
+    Falls back to sensible defaults if file doesn't exist.
+    
+    Returns
+    -------
+    Dict[str, Any]
+        Configuration dictionary with keys:
+        - 'random_forest': Hyperparameter grid for RandomForest
+        - 'categorical_features': List of categorical column names
+        - 'numeric_features': List of numeric column names
+    
+    Example
+    -------
+    >>> config = _load_config()
+    >>> config['random_forest']
+    {'n_estimators': [200, 300], 'max_depth': [None, 10]}
     """
 
     default_config = {
@@ -86,18 +116,27 @@ def _load_config() -> Dict[str, Any]:
 
 
 def _build_preprocessor(config: Dict[str, Any]) -> ColumnTransformer:
-    """
-    Build a ColumnTransformer for numeric scaling and one-hot encoding (OHE) of categorical features.
-
+    """Build preprocessing pipeline for categorical and numeric features.
+    
+    Creates a ColumnTransformer that:
+    - One-hot encodes categorical features (region, industry, criticality)
+    - Standardizes numeric features (credit_score, late_ratio, etc.)
+    
     Parameters
     ----------
     config : Dict[str, Any]
-        The model configuration dictionary including feature lists.
+        Configuration with 'categorical_features' and 'numeric_features' keys
 
     Returns
     -------
     ColumnTransformer
-        A fitted/unfitted sklearn ColumnTransformer preprocessing pipeline.
+        Sklearn preprocessing pipeline ready for fitting
+    
+    Example
+    -------
+    >>> config = {'categorical_features': ['region'], 'numeric_features': ['credit_score']}
+    >>> preprocessor = _build_preprocessor(config)
+    >>> preprocessor.fit_transform(df)
     """
     categorical = config["categorical_features"]
     numeric = config["numeric_features"]
@@ -115,24 +154,32 @@ def _grid_search(
     X_train: pd.DataFrame,
     y_train: pd.Series,
 ) -> Pipeline:
-    """
-    Perform grid search to identify optimal model hyperparameters.
+    """Optimize model hyperparameters using grid search with cross-validation.
+    
+    Performs 3-fold cross-validation grid search to find best hyperparameters.
+    Uses macro F1 score as optimization metric (balanced for multi-class).
+    Runs in parallel using all available CPU cores.
 
     Parameters
     ----------
     estimator : Pipeline
-        The sklearn Pipeline to optimize.
+        Sklearn Pipeline with 'model' step to optimize
     params : Dict[str, List[Any]]
-        Dictionary of parameter grids to search over.
+        Hyperparameter grid, e.g., {'n_estimators': [100, 200]}
     X_train : pd.DataFrame
-        Training data features.
+        Training features
     y_train : pd.Series
-        Training data targets.
+        Training labels (risk_label: low/medium/high)
 
     Returns
     -------
     Pipeline
-        Best estimator/pipeline identified by grid search.
+        Best pipeline found by grid search
+    
+    Example
+    -------
+    >>> params = {'n_estimators': [100, 200], 'max_depth': [10, 20]}
+    >>> best_model = _grid_search(pipeline, params, X_train, y_train)
     """
     grid = GridSearchCV(
         estimator,
@@ -199,23 +246,46 @@ def _train_single_model(
 
 
 def train_models(X: pd.DataFrame, y: pd.Series) -> List[ModelArtifacts]:
-    """
-    Train and save both RandomForest and optionally XGBoost models on supplied data.
-
-    Models and configuration-driven hyperparameter grids are used. Collects ModelArtifacts output
-    (containing pipeline and evaluation report) for each trained model.
+    """Train machine learning models with hyperparameter optimization.
+    
+    Complete training workflow:
+    1. Load configuration (hyperparameters, features)
+    2. Build preprocessing pipeline (scaling, encoding)
+    3. Split data (80/20 train/test, stratified)
+    4. Train Random Forest with grid search
+    5. Evaluate on test set
+    6. Save model to disk (models/random_forest.joblib)
+    7. Log training metrics to audit trail
+    8. Save training summary JSON
 
     Parameters
     ----------
     X : pd.DataFrame
-        Feature matrix for training.
+        Feature matrix with columns: region, industry, contract_criticality,
+        annual_spend, credit_score, late_ratio, dispute_rate, avg_delay,
+        clause_risk_score
     y : pd.Series
-        Target labels.
+        Target labels: 'low', 'medium', or 'high' risk
 
     Returns
     -------
     List[ModelArtifacts]
-        List of ModelArtifacts for each trained model.
+        List containing trained model artifacts with evaluation metrics
+    
+    Example
+    -------
+    >>> X, y = data_pipeline.prepare_training_data()
+    >>> artifacts = train_models(X, y)
+    >>> for artifact in artifacts:
+    ...     print(f"{artifact.model_name}: {artifact.report['accuracy']:.3f}")
+    random_forest: 0.847
+    
+    Notes
+    -----
+    - Uses stratified split to maintain class balance
+    - Optimizes for macro F1 score (handles class imbalance)
+    - Saves models to models/ directory
+    - Logs training events to audit trail
     """
 
     config = _load_config()
@@ -252,23 +322,34 @@ def train_models(X: pd.DataFrame, y: pd.Series) -> List[ModelArtifacts]:
     return artifacts
 
 def load_model(model_name: str = "random_forest") -> Pipeline:
-    """
-    Load a trained model pipeline from disk by model name.
+    """Load a trained model pipeline from disk.
+    
+    Loads a previously trained and saved model for inference.
+    Model must have been trained using train_models() first.
 
     Parameters
     ----------
     model_name : str, default="random_forest"
-        The name of the model pipeline to load.
+        Name of model to load (matches filename without .joblib extension)
 
     Returns
     -------
     Pipeline
-        Sklearn Pipeline object that was persisted to disk.
+        Complete sklearn Pipeline with preprocessing and trained model
 
     Raises
     ------
     FileNotFoundError
-        If the saved model .joblib file does not exist.
+        If models/{model_name}.joblib doesn't exist
+    
+    Example
+    -------
+    >>> pipeline = load_model("random_forest")
+    >>> prediction = pipeline.predict(X_new)
+    
+    Notes
+    -----
+    Models are saved to models/ directory as .joblib files
     """
     path = MODELS_DIR / f"{model_name}.joblib"
     if not path.exists():
@@ -318,23 +399,67 @@ def _compute_shap_values(pipeline: Pipeline, data: pd.DataFrame) -> Tuple[np.nda
 
 
 def predict_single(model_name: str, features: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Perform a single prediction with explanation for one supplier instance.
-
-    Loads the specified model, preprocesses the features, predicts the risk label,
-    outputs probability vector and the SHAP feature importance for the predicted class.
+    """Predict risk for a single supplier with SHAP explanations.
+    
+    Complete prediction workflow:
+    1. Load trained model from disk
+    2. Preprocess features (scaling, encoding)
+    3. Generate risk prediction (low/medium/high)
+    4. Calculate class probabilities
+    5. Compute SHAP values for explainability
+    6. Identify top 5 contributing features
+    7. Log prediction to audit trail
 
     Parameters
     ----------
     model_name : str
-        Name of the trained model to use for prediction.
+        Model to use: 'random_forest' or 'xgboost'
     features : Dict[str, Any]
-        Dictionary of features for a single sample (supplier).
+        Supplier features with keys:
+        - region: str ("North America", "Europe", "Asia-Pacific", "LATAM")
+        - industry: str ("Manufacturing", "Logistics", "IT Services", etc.)
+        - contract_criticality: str ("High", "Medium", "Low")
+        - annual_spend: float
+        - credit_score: int (300-900)
+        - late_ratio: float (0-1)
+        - dispute_rate: float (0-1)
+        - avg_delay: float (days)
+        - clause_risk_score: float (0-100)
 
     Returns
     -------
     Dict[str, Any]
-        Dictionary with prediction, probabilities, SHAP explanations, and top features.
+        Prediction results with keys:
+        - 'prediction': str - Risk level ('low', 'medium', 'high')
+        - 'probabilities': Dict[str, float] - Class probabilities
+        - 'top_features': List[Tuple[str, float]] - Top 5 SHAP features
+        - 'shap_values': List[float] - SHAP values for all features
+        - 'feature_names': List[str] - Feature names after preprocessing
+    
+    Example
+    -------
+    >>> features = {
+    ...     "region": "North America",
+    ...     "industry": "Manufacturing",
+    ...     "contract_criticality": "High",
+    ...     "annual_spend": 75000.0,
+    ...     "credit_score": 650,
+    ...     "late_ratio": 0.15,
+    ...     "dispute_rate": 0.08,
+    ...     "avg_delay": 8.0,
+    ...     "clause_risk_score": 45.0
+    ... }
+    >>> result = predict_single("random_forest", features)
+    >>> print(f"Risk: {result['prediction']}")
+    >>> print(f"Confidence: {result['probabilities'][result['prediction']]*100:.1f}%")
+    Risk: high
+    Confidence: 54.0%
+    
+    Notes
+    -----
+    - SHAP values explain which features drove the prediction
+    - Positive SHAP = increases risk, Negative = decreases risk
+    - All predictions logged to audit trail for compliance
     """
     pipeline = load_model(model_name)
     df = pd.DataFrame([features])
@@ -400,21 +525,39 @@ def predict_single(model_name: str, features: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def predict_batch(model_name: str, data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Perform batch prediction and explanation on a DataFrame of supplier features.
+    """Predict risk for multiple suppliers in batch mode.
+    
+    Efficient batch prediction for scoring many suppliers at once.
+    Used for weekly risk assessments and portfolio analysis.
 
     Parameters
     ----------
     model_name : str
-        Name of the trained model to use for prediction.
+        Model to use: 'random_forest' or 'xgboost'
     data : pd.DataFrame
-        DataFrame containing features for multiple suppliers.
+        DataFrame with required feature columns (see predict_single)
 
     Returns
     -------
     pd.DataFrame
-        Input data plus columns for prediction, risk label, probability of "high" risk,
-        and SHAP contribution sum. Also logs predictions.
+        Original data plus new columns:
+        - 'prediction': Risk level for each supplier
+        - 'risk_label': Same as prediction
+        - 'prob_high': Probability of high risk (0-1)
+        - 'shap_contribution_sum': Total SHAP contribution
+    
+    Example
+    -------
+    >>> suppliers_df = pd.read_csv("suppliers.csv")
+    >>> results = predict_batch("random_forest", suppliers_df)
+    >>> high_risk = results[results['prediction'] == 'high']
+    >>> print(f"High risk suppliers: {len(high_risk)}")
+    
+    Notes
+    -----
+    - Much faster than calling predict_single() in a loop
+    - Logs batch prediction event to audit trail
+    - Use for weekly scoring runs and portfolio monitoring
     """
     pipeline = load_model(model_name)
     preprocessor: ColumnTransformer = pipeline.named_steps["preprocessor"]

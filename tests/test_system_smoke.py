@@ -1,4 +1,14 @@
-"""Lightweight smoke tests verifying the end-to-end demo pipeline."""
+"""Lightweight smoke tests verifying the end-to-end demo pipeline.
+
+Why we test this:
+- Smoke tests validate the entire system works end-to-end
+- Catches integration issues between components (data → model → prediction)
+- Ensures synthetic data generation produces valid training data
+- Tests that models can be trained and used for predictions
+- Validates the complete MLOps workflow before production deployment
+- Critical for CI/CD pipelines - fails fast if system is broken
+- Verifies all artifacts (models, data, logs) are created correctly
+"""
 
 from __future__ import annotations
 
@@ -30,7 +40,11 @@ demo_pipeline = _demo_pipeline_module
 
 
 def test_demo_pipeline_generates_datasets():
-    """Ensure the synthetic data pipeline runs end-to-end and writes artefacts."""
+    """Ensure the synthetic data pipeline runs end-to-end and writes artefacts.
+    
+    Why: Validates the data generation pipeline creates all required files.
+    Ensures models and feature bundles are persisted for production use.
+    """
 
     artifacts = demo_pipeline.run_pipeline(num_suppliers=250, num_transactions=600, random_state=123)
     assert not artifacts.merged.empty
@@ -40,7 +54,11 @@ def test_demo_pipeline_generates_datasets():
 
 
 def test_model_training_and_prediction():
-    """Train models on the generated data and ensure predictions work."""
+    """Train models on the generated data and ensure predictions work.
+    
+    Why: End-to-end test of the ML pipeline from training to inference.
+    Catches issues that unit tests miss by testing component integration.
+    """
 
     X, y = data_pipeline.prepare_training_data()
     artifacts = model_pipeline.train_models(X, y)
@@ -52,7 +70,11 @@ def test_model_training_and_prediction():
 
 
 def test_demo_pipeline_predictor():
-    """Validate the helper prediction wrapper uses persisted artefacts."""
+    """Validate the helper prediction wrapper uses persisted artefacts.
+    
+    Why: Tests the production prediction API uses saved models correctly.
+    Ensures predictions include risk scores, labels, and recommendations.
+    """
 
     merged = pd.read_csv(BASE_DIR / "data" / "processed" / "merged_training.csv")
     payload = merged.iloc[0].to_dict()
@@ -61,7 +83,11 @@ def test_demo_pipeline_predictor():
 
 
 def test_auditing_log_quality():
-    """Check that auditing logs are produced in CSV format."""
+    """Check that auditing logs are produced in CSV format.
+    
+    Why: Validates audit trail is created for compliance and debugging.
+    Ensures data quality reports are generated and persisted.
+    """
 
     training_df, _ = data_pipeline.load_processed_datasets()
     report = auditing.log_data_quality(training_df.head())

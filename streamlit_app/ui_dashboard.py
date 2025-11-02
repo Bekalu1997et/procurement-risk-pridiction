@@ -6,11 +6,13 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-
-from src import auditing, data_pipeline, explainability, model_pipeline, recommendation, visualization
-
+import sys
 
 BASE_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE_DIR))
+
+from src import auditing, data_pipeline, explainability, model_pipeline, recommendation, visualization
+from backend import visualization_engine, explainability_viz
 
 
 def load_latest_weekly_report() -> pd.DataFrame:
@@ -65,12 +67,21 @@ def render_instant_prediction_tab() -> None:
         st.metric("Predicted Risk", explanation_obj.risk_level, delta=f"Confidence {explanation_obj.confidence}%")
         st.write(explanation_obj.narrative)
 
-        visualization_path = visualization.plot_shap_summary(
-            explanation_obj.shap_values,
-            explanation_obj.feature_names,
-            output_name="instant_prediction",
-        )
-        st.image(str(visualization_path), caption="SHAP Feature Impact")
+        col1, col2 = st.columns(2)
+        with col1:
+            viz_path = explainability_viz.plot_feature_importance(
+                explanation_obj.feature_names,
+                explanation_obj.shap_values,
+                output_name="instant_feature_importance",
+            )
+            st.image(str(viz_path), caption="Feature Importance")
+        with col2:
+            visualization_path = visualization.plot_shap_summary(
+                explanation_obj.shap_values,
+                explanation_obj.feature_names,
+                output_name="instant_prediction",
+            )
+            st.image(str(visualization_path), caption="SHAP Feature Impact")
 
         recos = recommendation.build_recommendations(
             risk_level=explanation_obj.risk_level,
@@ -90,8 +101,105 @@ def render_weekly_reports_tab() -> None:
         return
 
     st.dataframe(report_df.head())
-    pairplot_path = visualization.create_pairplot(report_df, output_name="weekly_report")
-    st.image(str(pairplot_path))
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        pairplot_path = visualization.create_pairplot(report_df, output_name="weekly_report")
+        st.image(str(pairplot_path), caption="Pairplot")
+    
+    with col2:
+        if "prediction_date" in report_df.columns and "risk_score" in report_df.columns:
+            risk_timeline_path = explainability_viz.plot_risk_score_timeline(
+                report_df,
+                date_col="prediction_date",
+                risk_col="risk_score",
+                output_name="weekly_risk_timeline",
+            )
+            st.image(str(risk_timeline_path), caption="Risk Score Timeline")
+
+
+def render_visualization_tab() -> None:
+    """Interactive visualization dashboard with multiple chart types."""
+
+    st.header("Advanced Visualizations")
+    report_df = load_latest_weekly_report()
+    if report_df.empty:
+        return
+
+    numeric_cols = report_df.select_dtypes(include=["number"]).columns.tolist()
+    categorical_cols = report_df.select_dtypes(include=["object"]).columns.tolist()
+    all_cols = report_df.columns.tolist()
+
+    chart_type = st.selectbox(
+        "Select Chart Type",
+        ["Pairplot", "Scatter Plot", "Heatmap", "Histogram", "Bar Chart", "Line Plot", "Box Plot", "Violin Plot", "Count Plot"],
+    )
+
+    if chart_type == "Pairplot":
+        hue = st.selectbox("Hue (optional)", [None] + categorical_cols)
+        if st.button("Generate Pairplot"):
+            path = visualization_engine.pairplot(report_df, hue=hue, output_name="custom_pairplot")
+            st.image(str(path))
+
+    elif chart_type == "Scatter Plot":
+        col1, col2 = st.columns(2)
+        x = col1.selectbox("X-axis", numeric_cols)
+        y = col2.selectbox("Y-axis", numeric_cols)
+        hue = st.selectbox("Hue (optional)", [None] + categorical_cols)
+        if st.button("Generate Scatter"):
+            path = visualization_engine.scatter(report_df, x=x, y=y, hue=hue, output_name="custom_scatter")
+            st.image(str(path))
+
+    elif chart_type == "Heatmap":
+        if st.button("Generate Heatmap"):
+            path = visualization_engine.heatmap(report_df, output_name="custom_heatmap")
+            st.image(str(path))
+
+    elif chart_type == "Histogram":
+        column = st.selectbox("Column", numeric_cols)
+        bins = st.slider("Bins", 10, 100, 30)
+        if st.button("Generate Histogram"):
+            path = visualization_engine.histogram(report_df, column=column, bins=bins, output_name="custom_histogram")
+            st.image(str(path))
+
+    elif chart_type == "Bar Chart":
+        col1, col2 = st.columns(2)
+        x = col1.selectbox("X-axis (categorical)", categorical_cols if categorical_cols else all_cols)
+        y = col2.selectbox("Y-axis (numeric)", numeric_cols)
+        if st.button("Generate Bar Chart"):
+            path = visualization_engine.bar_chart(report_df, x=x, y=y, output_name="custom_bar")
+            st.image(str(path))
+
+    elif chart_type == "Line Plot":
+        col1, col2 = st.columns(2)
+        x = col1.selectbox("X-axis", all_cols)
+        y = col2.selectbox("Y-axis", numeric_cols)
+        hue = st.selectbox("Hue (optional)", [None] + categorical_cols)
+        if st.button("Generate Line Plot"):
+            path = visualization_engine.line_plot(report_df, x=x, y=y, hue=hue, output_name="custom_line")
+            st.image(str(path))
+
+    elif chart_type == "Box Plot":
+        col1, col2 = st.columns(2)
+        x = col1.selectbox("X-axis (categorical)", categorical_cols if categorical_cols else all_cols)
+        y = col2.selectbox("Y-axis (numeric)", numeric_cols)
+        if st.button("Generate Box Plot"):
+            path = visualization_engine.box_plot(report_df, x=x, y=y, output_name="custom_box")
+            st.image(str(path))
+
+    elif chart_type == "Violin Plot":
+        col1, col2 = st.columns(2)
+        x = col1.selectbox("X-axis (categorical)", categorical_cols if categorical_cols else all_cols)
+        y = col2.selectbox("Y-axis (numeric)", numeric_cols)
+        if st.button("Generate Violin Plot"):
+            path = visualization_engine.violin_plot(report_df, x=x, y=y, output_name="custom_violin")
+            st.image(str(path))
+
+    elif chart_type == "Count Plot":
+        column = st.selectbox("Column", categorical_cols if categorical_cols else all_cols)
+        if st.button("Generate Count Plot"):
+            path = visualization_engine.count_plot(report_df, column=column, output_name="custom_count")
+            st.image(str(path))
 
 
 def render_explainability_chat_tab() -> None:
@@ -121,14 +229,16 @@ def main() -> None:
     """Entrypoint for the Streamlit dashboard."""
 
     st.set_page_config(page_title="Supplier Risk Demo", layout="wide")
-    tabs = st.tabs(["Instant Prediction", "Weekly Reports", "Explainability Chat", "Audit Monitor"])
+    tabs = st.tabs(["Instant Prediction", "Weekly Reports", "Advanced Visualizations", "Explainability Chat", "Audit Monitor"])
     with tabs[0]:
         render_instant_prediction_tab()
     with tabs[1]:
         render_weekly_reports_tab()
     with tabs[2]:
-        render_explainability_chat_tab()
+        render_visualization_tab()
     with tabs[3]:
+        render_explainability_chat_tab()
+    with tabs[4]:
         render_audit_monitor_tab()
 
 

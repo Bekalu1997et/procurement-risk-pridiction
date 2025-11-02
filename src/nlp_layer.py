@@ -8,7 +8,7 @@ from typing import List
 
 from transformers import pipeline
 
-import auditing
+from . import auditing
 
 
 def summarize_shap_values(shap_values, feature_names, top_k: int = 5):

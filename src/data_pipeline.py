@@ -13,7 +13,7 @@ from typing import Dict, Iterable, Tuple
 
 import pandas as pd
 
-import auditing
+from . import auditing
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]

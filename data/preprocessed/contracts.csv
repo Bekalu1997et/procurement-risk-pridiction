@@ -1,0 +1,501 @@
+supplier_id,contract_text,clause_risk_score
+S_00001,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,47.47
+S_00002,Penalty clause included for delayed delivery. Payment terms: net 30 days.,20.41
+S_00003,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,36.31
+S_00004,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,58.38
+S_00005,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,22.65
+S_00006,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,33.11
+S_00007,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.54
+S_00008,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,44.7
+S_00009,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,33.16
+S_00010,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,69.51
+S_00011,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.59
+S_00012,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,47.27
+S_00013,Penalty clause included for delayed delivery. Payment terms: net 30 days.,15.36
+S_00014,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,54.06
+S_00015,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,46.81
+S_00016,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,45.58
+S_00017,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,51.22
+S_00018,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,42.21
+S_00019,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,43.63
+S_00020,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,58.25
+S_00021,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.26
+S_00022,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,58.59
+S_00023,No clear penalty clause; termination ambiguous.,55.05
+S_00024,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,39.16
+S_00025,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,52.86
+S_00026,Long-term partnership clause with annual reviews.,29.74
+S_00027,Penalty clause included for delayed delivery.,15.4
+S_00028,No clear penalty clause; termination ambiguous.,59.9
+S_00029,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,36.77
+S_00030,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,34.17
+S_00031,Penalty clause included for delayed delivery. Payment terms: net 30 days.,16.04
+S_00032,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,48.59
+S_00033,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,47.34
+S_00034,Penalty clause included for delayed delivery.,22.23
+S_00035,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,56.58
+S_00036,Penalty clause included for delayed delivery. Payment terms: net 30 days.,21.6
+S_00037,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,44.48
+S_00038,Supplier notified raw material shortages causing delays.,47.6
+S_00039,Standard contract with net 30 payment terms.,25.55
+S_00040,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,32.41
+S_00041,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.17
+S_00042,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,43.12
+S_00043,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.86
+S_00044,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,40.75
+S_00045,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.54
+S_00046,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,37.66
+S_00047,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,41.16
+S_00048,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.28
+S_00049,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,57.43
+S_00050,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,47.64
+S_00051,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.83
+S_00052,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,23.04
+S_00053,Penalty clause included for delayed delivery. Payment terms: net 30 days.,15.76
+S_00054,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,54.79
+S_00055,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.38
+S_00056,Penalty clause included for delayed delivery.,20.18
+S_00057,Long-term partnership clause with annual reviews.,32.02
+S_00058,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,53.27
+S_00059,Standard contract with net 30 payment terms.,27.47
+S_00060,No clear penalty clause; termination ambiguous.,51.82
+S_00061,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,47.48
+S_00062,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,34.93
+S_00063,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,20.49
+S_00064,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,39.85
+S_00065,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,63.7
+S_00066,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,57.74
+S_00067,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,74.87
+S_00068,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,55.93
+S_00069,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,49.66
+S_00070,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,24.68
+S_00071,Supplier notified raw material shortages causing delays.,40.89
+S_00072,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.14
+S_00073,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.43
+S_00074,No clear penalty clause; termination ambiguous.,52.29
+S_00075,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,66.03
+S_00076,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.38
+S_00077,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,38.78
+S_00078,Long-term partnership clause with annual reviews.,34.02
+S_00079,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,28.27
+S_00080,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.4
+S_00081,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,44.71
+S_00082,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,18.19
+S_00083,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,19.12
+S_00084,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,45.35
+S_00085,Long-term partnership clause with annual reviews.,34.35
+S_00086,Standard contract with net 30 payment terms.,30.23
+S_00087,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.74
+S_00088,Supplier notified raw material shortages causing delays.,42.54
+S_00089,Standard contract with net 30 payment terms.,34.05
+S_00090,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,36.56
+S_00091,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,66.94
+S_00092,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,61.97
+S_00093,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,67.72
+S_00094,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,67.14
+S_00095,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,49.39
+S_00096,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,64.25
+S_00097,Payment terms: net 30 days.,32.0
+S_00098,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,40.46
+S_00099,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,47.82
+S_00100,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,61.22
+S_00101,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,56.32
+S_00102,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,43.86
+S_00103,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,66.95
+S_00104,No clear penalty clause; termination ambiguous.,56.05
+S_00105,Payment terms: net 30 days.,32.6
+S_00106,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,46.39
+S_00107,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,57.51
+S_00108,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,45.42
+S_00109,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,68.39
+S_00110,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,72.13
+S_00111,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,73.61
+S_00112,No clear penalty clause; termination ambiguous.,59.84
+S_00113,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,60.75
+S_00114,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.27
+S_00115,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,35.73
+S_00116,Standard contract with net 30 payment terms.,27.97
+S_00117,No clear penalty clause; termination ambiguous.,52.37
+S_00118,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,61.5
+S_00119,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,74.73
+S_00120,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,38.02
+S_00121,Supplier notified raw material shortages causing delays.,45.03
+S_00122,Penalty clause included for delayed delivery.,15.42
+S_00123,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,69.79
+S_00124,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,56.63
+S_00125,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,44.25
+S_00126,Penalty clause included for delayed delivery.,22.5
+S_00127,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.72
+S_00128,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,41.95
+S_00129,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,36.18
+S_00130,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,49.95
+S_00131,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,24.53
+S_00132,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,16.4
+S_00133,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,44.87
+S_00134,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,19.83
+S_00135,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,33.78
+S_00136,Penalty clause included for delayed delivery.,15.5
+S_00137,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,68.11
+S_00138,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,32.17
+S_00139,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,56.37
+S_00140,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,67.14
+S_00141,Penalty clause included for delayed delivery. Payment terms: net 30 days.,15.34
+S_00142,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.93
+S_00143,Standard contract with net 30 payment terms.,33.9
+S_00144,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.87
+S_00145,Penalty clause included for delayed delivery. Payment terms: net 30 days.,21.63
+S_00146,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,16.59
+S_00147,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,43.62
+S_00148,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,31.19
+S_00149,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,59.75
+S_00150,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,46.16
+S_00151,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.82
+S_00152,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,47.51
+S_00153,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,37.4
+S_00154,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,61.56
+S_00155,Payment terms: net 30 days.,30.66
+S_00156,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,36.49
+S_00157,Supplier notified raw material shortages causing delays.,43.42
+S_00158,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,73.2
+S_00159,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,43.91
+S_00160,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,40.54
+S_00161,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,71.8
+S_00162,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,62.51
+S_00163,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,54.04
+S_00164,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,31.46
+S_00165,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,39.98
+S_00166,Standard contract with net 30 payment terms.,34.52
+S_00167,Long-term partnership clause with annual reviews.,33.17
+S_00168,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,73.32
+S_00169,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,59.29
+S_00170,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,22.55
+S_00171,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.03
+S_00172,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,41.24
+S_00173,Standard contract with net 30 payment terms.,29.34
+S_00174,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,24.87
+S_00175,Supplier notified raw material shortages causing delays.,45.81
+S_00176,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,45.43
+S_00177,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,15.08
+S_00178,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,46.67
+S_00179,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,73.98
+S_00180,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,47.48
+S_00181,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,31.09
+S_00182,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,56.84
+S_00183,Penalty clause included for delayed delivery.,23.04
+S_00184,Penalty clause included for delayed delivery.,17.69
+S_00185,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,61.15
+S_00186,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.71
+S_00187,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,41.86
+S_00188,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.67
+S_00189,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,48.22
+S_00190,Payment terms: net 30 days.,25.64
+S_00191,Long-term partnership clause with annual reviews.,29.76
+S_00192,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.47
+S_00193,Long-term partnership clause with annual reviews.,29.09
+S_00194,Supplier notified raw material shortages causing delays.,40.91
+S_00195,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,58.2
+S_00196,No clear penalty clause; termination ambiguous.,50.82
+S_00197,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.87
+S_00198,Payment terms: net 30 days.,31.98
+S_00199,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,43.48
+S_00200,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,64.82
+S_00201,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,63.43
+S_00202,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,43.57
+S_00203,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,44.82
+S_00204,Long-term partnership clause with annual reviews.,27.16
+S_00205,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,44.71
+S_00206,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,52.99
+S_00207,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.12
+S_00208,Long-term partnership clause with annual reviews.,26.21
+S_00209,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,45.34
+S_00210,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,26.25
+S_00211,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,30.84
+S_00212,Long-term partnership clause with annual reviews.,30.1
+S_00213,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,43.19
+S_00214,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,51.04
+S_00215,Long-term partnership clause with annual reviews.,31.5
+S_00216,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.56
+S_00217,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,18.21
+S_00218,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,36.2
+S_00219,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,42.86
+S_00220,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,42.37
+S_00221,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,71.74
+S_00222,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,47.96
+S_00223,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,61.07
+S_00224,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,60.82
+S_00225,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.59
+S_00226,Standard contract with net 30 payment terms.,27.9
+S_00227,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,41.76
+S_00228,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,52.25
+S_00229,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,48.43
+S_00230,Supplier notified raw material shortages causing delays.,49.84
+S_00231,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.67
+S_00232,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,43.31
+S_00233,Penalty clause included for delayed delivery.,20.49
+S_00234,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,59.29
+S_00235,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,55.74
+S_00236,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,33.95
+S_00237,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.45
+S_00238,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,72.22
+S_00239,Penalty clause included for delayed delivery. Payment terms: net 30 days.,24.4
+S_00240,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,63.74
+S_00241,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,59.74
+S_00242,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.68
+S_00243,Standard contract with net 30 payment terms.,34.49
+S_00244,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,33.8
+S_00245,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,47.14
+S_00246,Penalty clause included for delayed delivery. Payment terms: net 30 days.,18.37
+S_00247,Supplier notified raw material shortages causing delays.,45.11
+S_00248,Penalty clause included for delayed delivery. Payment terms: net 30 days.,21.04
+S_00249,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,64.42
+S_00250,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,47.4
+S_00251,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,27.37
+S_00252,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,49.78
+S_00253,Standard contract with net 30 payment terms.,31.63
+S_00254,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,36.38
+S_00255,Long-term partnership clause with annual reviews.,34.51
+S_00256,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,49.47
+S_00257,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,46.14
+S_00258,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.77
+S_00259,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,19.69
+S_00260,Supplier notified raw material shortages causing delays.,48.62
+S_00261,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.82
+S_00262,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,43.34
+S_00263,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,46.86
+S_00264,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,45.15
+S_00265,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,33.09
+S_00266,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,49.26
+S_00267,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,36.45
+S_00268,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,32.14
+S_00269,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.92
+S_00270,Penalty clause included for delayed delivery. Payment terms: net 30 days.,24.05
+S_00271,Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,40.02
+S_00272,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,73.43
+S_00273,No clear penalty clause; termination ambiguous.,59.74
+S_00274,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.92
+S_00275,No clear penalty clause; termination ambiguous.,55.21
+S_00276,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,57.47
+S_00277,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,57.65
+S_00278,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.86
+S_00279,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,18.82
+S_00280,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,49.99
+S_00281,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,60.52
+S_00282,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,57.97
+S_00283,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,62.34
+S_00284,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.25
+S_00285,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,54.81
+S_00286,Payment terms: net 30 days.,32.43
+S_00287,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,48.2
+S_00288,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,28.44
+S_00289,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,30.83
+S_00290,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,19.02
+S_00291,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.49
+S_00292,Long-term partnership clause with annual reviews.,28.57
+S_00293,Penalty clause included for delayed delivery.,22.99
+S_00294,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,64.67
+S_00295,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,42.38
+S_00296,No clear penalty clause; termination ambiguous.,51.85
+S_00297,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,51.17
+S_00298,No clear penalty clause; termination ambiguous.,55.59
+S_00299,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,56.56
+S_00300,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,52.85
+S_00301,Standard contract with net 30 payment terms.,31.59
+S_00302,Long-term partnership clause with annual reviews.,30.82
+S_00303,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.77
+S_00304,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.04
+S_00305,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,66.53
+S_00306,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,49.14
+S_00307,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.46
+S_00308,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,59.87
+S_00309,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,60.37
+S_00310,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,60.57
+S_00311,Long-term partnership clause with annual reviews.,33.01
+S_00312,Penalty clause included for delayed delivery.,17.51
+S_00313,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,71.27
+S_00314,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,43.01
+S_00315,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,49.81
+S_00316,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,74.56
+S_00317,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,56.58
+S_00318,No clear penalty clause; termination ambiguous.,57.52
+S_00319,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,58.24
+S_00320,Payment terms: net 30 days.,29.25
+S_00321,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,66.47
+S_00322,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,49.78
+S_00323,Standard contract with net 30 payment terms.,31.43
+S_00324,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,52.02
+S_00325,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.6
+S_00326,Penalty clause included for delayed delivery. Payment terms: net 30 days.,15.55
+S_00327,Penalty clause included for delayed delivery.,17.94
+S_00328,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,16.7
+S_00329,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,58.38
+S_00330,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,67.65
+S_00331,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,17.45
+S_00332,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,47.84
+S_00333,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,21.32
+S_00334,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,68.75
+S_00335,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,48.74
+S_00336,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,22.47
+S_00337,Long-term partnership clause with annual reviews.,26.34
+S_00338,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,67.59
+S_00339,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,55.97
+S_00340,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,72.43
+S_00341,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,70.76
+S_00342,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,31.86
+S_00343,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,41.48
+S_00344,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,46.72
+S_00345,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,52.49
+S_00346,Long-term partnership clause with annual reviews.,29.45
+S_00347,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,51.24
+S_00348,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,72.86
+S_00349,Penalty clause included for delayed delivery.,19.57
+S_00350,Penalty clause included for delayed delivery.,15.15
+S_00351,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,39.18
+S_00352,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,64.13
+S_00353,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,65.94
+S_00354,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,44.81
+S_00355,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,63.71
+S_00356,No clear penalty clause; termination ambiguous.,52.77
+S_00357,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,16.58
+S_00358,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,53.87
+S_00359,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,27.65
+S_00360,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,57.34
+S_00361,Payment terms: net 30 days.,27.35
+S_00362,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,22.8
+S_00363,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,58.15
+S_00364,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,61.58
+S_00365,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,42.82
+S_00366,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,72.65
+S_00367,Payment terms: net 30 days.,32.71
+S_00368,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,25.89
+S_00369,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,41.88
+S_00370,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,60.92
+S_00371,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.08
+S_00372,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,70.6
+S_00373,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,69.93
+S_00374,Supplier notified raw material shortages causing delays.,45.92
+S_00375,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,45.72
+S_00376,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,55.51
+S_00377,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,22.93
+S_00378,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,41.83
+S_00379,Payment terms: net 30 days.,31.26
+S_00380,Payment terms: net 30 days.,28.57
+S_00381,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.78
+S_00382,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,51.58
+S_00383,Standard contract with net 30 payment terms.,27.59
+S_00384,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,47.58
+S_00385,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,65.14
+S_00386,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.4
+S_00387,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,60.04
+S_00388,Long-term partnership clause with annual reviews.,31.37
+S_00389,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,33.44
+S_00390,Long-term partnership clause with annual reviews.,33.14
+S_00391,Standard contract with net 30 payment terms.,27.87
+S_00392,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,50.72
+S_00393,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,16.12
+S_00394,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,63.24
+S_00395,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,67.1
+S_00396,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,56.79
+S_00397,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,68.9
+S_00398,Payment terms: net 30 days.,28.38
+S_00399,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,25.78
+S_00400,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,61.3
+S_00401,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,71.6
+S_00402,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,66.77
+S_00403,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,59.92
+S_00404,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,38.16
+S_00405,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,25.89
+S_00406,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,33.88
+S_00407,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,47.8
+S_00408,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,69.27
+S_00409,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,62.42
+S_00410,Supplier notified raw material shortages causing delays.,40.07
+S_00411,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,67.91
+S_00412,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,29.74
+S_00413,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,43.37
+S_00414,Long-term partnership clause with annual reviews.,34.41
+S_00415,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,59.23
+S_00416,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.92
+S_00417,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,56.9
+S_00418,Supplier notified raw material shortages causing delays.,40.1
+S_00419,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,49.41
+S_00420,Payment terms: net 30 days.,28.58
+S_00421,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,39.58
+S_00422,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.1
+S_00423,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous.,45.21
+S_00424,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,58.82
+S_00425,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,67.64
+S_00426,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,32.43
+S_00427,Long-term partnership clause with annual reviews.,29.23
+S_00428,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,17.62
+S_00429,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.38
+S_00430,Penalty clause included for delayed delivery. Payment terms: net 30 days.,20.35
+S_00431,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,45.41
+S_00432,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,31.44
+S_00433,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,42.41
+S_00434,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.78
+S_00435,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,44.45
+S_00436,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,58.45
+S_00437,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,32.97
+S_00438,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,43.25
+S_00439,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,69.15
+S_00440,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,39.07
+S_00441,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,34.81
+S_00442,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.58
+S_00443,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,20.47
+S_00444,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,55.25
+S_00445,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,30.03
+S_00446,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,42.32
+S_00447,No clear penalty clause; termination ambiguous.,58.68
+S_00448,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,40.7
+S_00449,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,33.59
+S_00450,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,31.84
+S_00451,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,70.49
+S_00452,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,37.96
+S_00453,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,48.11
+S_00454,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,16.19
+S_00455,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.38
+S_00456,Penalty clause included for delayed delivery. Payment terms: net 30 days. Long-term partnership clause with annual reviews.,15.65
+S_00457,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,52.44
+S_00458,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,31.27
+S_00459,No clear penalty clause; termination ambiguous.,53.32
+S_00460,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,38.07
+S_00461,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,55.34
+S_00462,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,38.95
+S_00463,Penalty clause included for delayed delivery. Payment terms: net 30 days.,21.98
+S_00464,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.87
+S_00465,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,55.8
+S_00466,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,40.04
+S_00467,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,55.78
+S_00468,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,68.4
+S_00469,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,59.45
+S_00470,Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,53.13
+S_00471,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,43.17
+S_00472,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,61.26
+S_00473,Standard contract with net 30 payment terms.,32.34
+S_00474,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,51.02
+S_00475,Long-term partnership clause with annual reviews.,33.27
+S_00476,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,42.38
+S_00477,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,45.77
+S_00478,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,36.34
+S_00479,Penalty clause included for delayed delivery. Supplier notified raw material shortages causing delays.,35.14
+S_00480,Payment terms: net 30 days.,32.2
+S_00481,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,35.05
+S_00482,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.28
+S_00483,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,72.04
+S_00484,Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,45.54
+S_00485,Long-term partnership clause with annual reviews.,25.88
+S_00486,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,17.88
+S_00487,Penalty clause included for delayed delivery. Payment terms: net 30 days.,18.51
+S_00488,Payment terms: net 30 days. Long-term partnership clause with annual reviews.,33.25
+S_00489,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,42.38
+S_00490,Penalty clause included for delayed delivery. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,62.25
+S_00491,Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,41.33
+S_00492,Payment terms: net 30 days.,27.05
+S_00493,No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,69.93
+S_00494,Penalty clause included for delayed delivery. Payment terms: net 30 days. Supplier notified raw material shortages causing delays.,33.99
+S_00495,Penalty clause included for delayed delivery.,23.54
+S_00496,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays.,56.69
+S_00497,Penalty clause included for delayed delivery. Payment terms: net 30 days. No clear penalty clause; termination ambiguous.,41.46
+S_00498,Payment terms: net 30 days. No clear penalty clause; termination ambiguous. Supplier notified raw material shortages causing delays. Long-term partnership clause with annual reviews.,71.62
+S_00499,Penalty clause included for delayed delivery. Long-term partnership clause with annual reviews.,24.45
+S_00500,No clear penalty clause; termination ambiguous. Long-term partnership clause with annual reviews.,51.39

@@ -1,39 +1,54 @@
 """Database connectivity utilities for the risk prediction demo platform.
 
-The project leverages a lightweight SQLite database to simulate an
-operational data store (ODS) for supplier profiles, prediction history, and
-auditing metadata.  The functions exposed here intentionally wrap SQLAlchemy
-operations in a pedagogical manner, showing how production systems often
-abstract persistence concerns away from business logic.
+The project leverages a PostgreSQL database to simulate an operational data
+store (ODS) for supplier profiles, prediction history, and auditing metadata.
+The functions exposed here intentionally wrap SQLAlchemy operations in a
+pedagogical manner, showing how production systems often abstract persistence
+concerns away from business logic.
 """
 
 from __future__ import annotations
 
 import logging
-from pathlib import Path
+import os
 from typing import Any, Dict, Iterable, List, Optional
 
 import pandas as pd
+from dotenv import load_dotenv
 from sqlalchemy import JSON, Column, DateTime, Float, Integer, MetaData, String, Table, create_engine, insert, select, text
 from sqlalchemy.engine import Engine
 from sqlalchemy.exc import SQLAlchemyError
 
 
 LOGGER = logging.getLogger(__name__)
-BASE_DIR = Path(__file__).resolve().parents[1]
-DB_PATH = BASE_DIR / "reports" / "audit_logs" / "risk_demo.sqlite"
+
+# Load environment variables from .env file
+load_dotenv()
+
+# PostgreSQL connection parameters from environment variables
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = os.getenv("DB_PORT", "5432")
+DB_NAME = os.getenv("DB_NAME", "risk_demo")
+DB_USER = os.getenv("DB_USER", "postgres")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "postgres")
 
 
 def get_engine(echo: bool = False) -> Engine:
-    """Instantiate (and cache) a SQLAlchemy engine for SQLite operations."""
+    """Instantiate (and cache) a SQLAlchemy engine for PostgreSQL operations.
+    The function creates a SQLAlchemy engine for PostgreSQL operations.
+    It uses the environment variables for the database connection.
+    """
 
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    engine = create_engine(f"sqlite:///{DB_PATH}", echo=echo, future=True)
+    connection_string = f"postgresql+psycopg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    engine = create_engine(connection_string, echo=echo, future=True)
     return engine
 
 
 def initialize_database() -> None:
-    """Create necessary tables when the database file is first provisioned."""
+    """Create necessary tables when the database file is first provisioned.
+    The function creates the necessary tables for the database.
+    It uses the SQLAlchemy metadata to create the tables.
+    """
 
     engine = get_engine()
     metadata = MetaData()
@@ -76,7 +91,10 @@ def initialize_database() -> None:
 
 
 def load_supplier_profile(supplier_id: int) -> Optional[Dict[str, Any]]:
-    """Retrieve a supplier profile from the SQLite database."""
+    """Retrieve a supplier profile from the PostgreSQL database.
+    The function retrieves a supplier profile from the PostgreSQL database.
+    It uses the SQLAlchemy engine to execute the query.
+    """
 
     engine = get_engine()
     query = text(
@@ -91,7 +109,10 @@ def load_supplier_profile(supplier_id: int) -> Optional[Dict[str, Any]]:
 
 
 def save_predictions(records: Iterable[Dict[str, Any]]) -> None:
-    """Persist prediction events into the history table."""
+    """Persist prediction events into the history table.
+    The function persists the prediction events into the history table.
+    It uses the SQLAlchemy engine to execute the insert.
+    """
 
     engine = get_engine()
     metadata = MetaData()
@@ -102,7 +123,10 @@ def save_predictions(records: Iterable[Dict[str, Any]]) -> None:
 
 
 def get_historical_scores(limit: int = 50) -> List[Dict[str, Any]]:
-    """Fetch the most recent prediction history entries for dashboards."""
+    """Fetch the most recent prediction history entries for dashboards.
+    The function fetches the most recent prediction history entries for dashboards.
+    It uses the SQLAlchemy engine to execute the query.
+    """
 
     engine = get_engine()
     metadata = MetaData()
@@ -116,7 +140,10 @@ def get_historical_scores(limit: int = 50) -> List[Dict[str, Any]]:
 
 
 def write_audit_event(event_type: str, payload: Dict[str, Any]) -> None:
-    """Insert an audit event. Errors are swallowed but logged for resilience."""
+    """Insert an audit event. Errors are swallowed but logged for resilience.
+    The function inserts an audit event into the audit_events table.
+    It uses the SQLAlchemy engine to execute the insert.
+    """
 
     engine = get_engine()
     metadata = MetaData()
@@ -136,7 +163,10 @@ def write_audit_event(event_type: str, payload: Dict[str, Any]) -> None:
 
 
 def fetch_audit_trail(limit: int = 100) -> pd.DataFrame:
-    """Return a pandas dataframe of recent audit events for analysis."""
+    """Return a pandas dataframe of recent audit events for analysis.
+    The function fetches the recent audit events from the audit_events table.
+    It uses the SQLAlchemy engine to execute the query.
+    """
 
     engine = get_engine()
     query = text(
@@ -152,8 +182,10 @@ def fetch_audit_trail(limit: int = 100) -> pd.DataFrame:
         df = pd.read_sql(query, conn, params={"limit": limit})
     return df
 
-
-# Initialize the database schema when the module is first imported to simplify
-# the developer experience in workshops and demos.
-initialize_database()
+try:
+    initialize_database()
+    print("Database initialized successfully.")
+except SQLAlchemyError as exc:  # pragma: no cover - depends on external service.
+    LOGGER.error("Failed to initialize database: %s", exc)
+    print("Database initialization failed. Check logs for details.")
 

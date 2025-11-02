@@ -1,65 +1,65 @@
 {
-  "auc_macro": 0.9160551485885122,
+  "auc_macro": 0.9993826024041418,
   "top_importances": [
     {
-      "feature": "avg_payment_delay_days",
-      "importance": 0.1169082858429293
-    },
-    {
       "feature": "past_disputes",
-      "importance": 0.11131813438854012
+      "importance": 0.17707382263905588
     },
     {
       "feature": "financial_stability_index",
-      "importance": 0.10503091062973653
+      "importance": 0.17154614353307432
     },
     {
-      "feature": "delivery_score",
-      "importance": 0.046346090147043585
-    },
-    {
-      "feature": "avg_delay",
-      "importance": 0.04366606949507467
+      "feature": "avg_payment_delay_days",
+      "importance": 0.13519400599716186
     },
     {
       "feature": "avg_delivery_quality",
-      "importance": 0.04153929119879416
+      "importance": 0.06548334726379679
     },
     {
-      "feature": "avg_txn_amount",
-      "importance": 0.03941235345655123
+      "feature": "avg_delay",
+      "importance": 0.06338557412093132
     },
     {
-      "feature": "annual_revenue",
-      "importance": 0.03858333341854989
+      "feature": "delivery_score",
+      "importance": 0.056516645139253446
     },
     {
       "feature": "clause_risk_score",
-      "importance": 0.038187388913328145
+      "importance": 0.04101441359037823
     },
     {
-      "feature": "annual_spend",
-      "importance": 0.03643766810196735
-    },
-    {
-      "feature": "contract_value",
-      "importance": 0.03606258688564652
-    },
-    {
-      "feature": "contract_duration_months",
-      "importance": 0.033680616787482985
-    },
-    {
-      "feature": "relationship_years",
-      "importance": 0.024748291402290425
-    },
-    {
-      "feature": "txn_count",
-      "importance": 0.019090046050755486
+      "feature": "avg_txn_amount",
+      "importance": 0.028427771980273474
     },
     {
       "feature": "late_ratio",
-      "importance": 0.018651307275160362
+      "importance": 0.026972173996547645
+    },
+    {
+      "feature": "contract_value",
+      "importance": 0.024048612547233946
+    },
+    {
+      "feature": "annual_spend",
+      "importance": 0.023582399083816097
+    },
+    {
+      "feature": "annual_revenue",
+      "importance": 0.0232587340897075
+    },
+    {
+      "feature": "contract_duration_months",
+      "importance": 0.021205912758028047
+    },
+    {
+      "feature": "txn_count",
+      "importance": 0.019873133337579365
+    },
+    {
+      "feature": "relationship_years",
+      "importance": 0.016117947481413215
     }
   ],
   "class_labels": [

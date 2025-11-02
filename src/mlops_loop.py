@@ -9,7 +9,7 @@ import pandas as pd
 import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from . import auditing, data_pipeline, model_pipeline, visualization
+import auditing, data_pipeline, model_pipeline, visualization
 from backend import alerts_engine
 
 

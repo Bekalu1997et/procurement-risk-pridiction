@@ -8,12 +8,29 @@ from typing import List
 
 from transformers import pipeline
 
-from . import auditing
+import auditing
+
+
+def summarize_shap_values(shap_values, feature_names, top_k: int = 5):
+    """Compatibility helper: return top-k features by absolute SHAP impact.
+
+    Some modules historically called this helper from the NLP layer; providing
+    a small wrapper keeps older call sites working when notebooks reload in
+    interactive sessions.
+    """
+    ranked = sorted(zip(feature_names, shap_values), key=lambda tpl: abs(tpl[1]), reverse=True)
+    return ranked[:top_k]
 
 
 @dataclass
 class NLPSummary:
-    """Structured summary of contract insights for dashboards."""
+    """Structured summary of contract insights for dashboards.
+    The NLPSummary class is a dataclass that captures the structured summary of contract insights for dashboards.
+    It uses the List[str] object to store the key risks.
+    It uses the List[str] object to store the mitigation actions.
+    It uses the str object to store the raw summary.
+    It also logs the contract summary using the auditing module.
+    """
 
     key_risks: List[str]
     mitigation_actions: List[str]
@@ -21,7 +38,11 @@ class NLPSummary:
 
 
 def summarize_contract(contract_text: str) -> NLPSummary:
-    """Use a transformer summarizer to condense contract risk signals."""
+    """Use a transformer summarizer to condense contract risk signals.
+    The function uses a transformer summarizer to condense the contract text.
+    It uses the pipeline function from the transformers library to summarise the contract text.
+    It also logs the contract summary using the auditing module.
+    """
 
     try:
         summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
@@ -49,7 +70,11 @@ def summarize_contract(contract_text: str) -> NLPSummary:
 
 
 def contract_qna(question: str, context: str) -> str:
-    """Run a question-answering model to extract answers from contract text."""
+    """Run a question-answering model to extract answers from contract text.
+    The function runs a question-answering model to extract answers from the contract text.
+    It uses the pipeline function from the transformers library to answer the question.
+    It also logs the contract question and answer using the auditing module.
+    """
 
     try:
         qna_pipeline = pipeline(

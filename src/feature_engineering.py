@@ -1,9 +1,17 @@
-"""Feature engineering utilities for supplier risk analytics.
+"""
+Feature engineering utilities for supplier risk analytics.
 
-The functions below transform raw transaction and contract data into
-model-ready features, including categorical buckets and NLP embeddings.  Each
-step records metadata using the auditing pipeline so stakeholders can trace the
-provenance of engineered features.
+Feature engineering here is like creating new columns from raw transactional or contract data that capture risky supplier behavior. 
+For example, "delayed ratio" means: for all transactions, how many are delayed divided by total transactions. 
+Features like "mean delayed days" is the average time a supplier delays payment, and you can also compute how far actual transaction end date is from contract end date. 
+These patterns are all useful features that tell our trained model about supplier risk in ways that are more informative than the raw data itself.
+
+Even though we have an embedding model (pre-trained, used for extracting text features from contracts), we still do this numeric feature engineering, 
+because models learn much better when they get clear, domain-informed behaviors—like ratios, averages, or category buckets—rather than just the raw data. 
+So: embedding is for unstructured text (e.g., contract language), but engineered features like ratios and means (e.g., late transaction ratio, avg delay days) 
+are crucial for quantifying behavioral risk. Both types go into our final model.
+
+All steps record feature transformation metadata using the auditing pipeline, so stakeholders can always trace how engineered features were created.
 """
 
 from __future__ import annotations
@@ -25,7 +33,11 @@ EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 def calculate_behavioral_features(transactions: pd.DataFrame) -> pd.DataFrame:
-    """Aggregate transaction data into supplier-level behavioural metrics."""
+    """Aggregate transaction data into supplier-level behavioural metrics.
+    The function aggregates the transaction data into supplier-level behavioural metrics.
+    It uses the pandas groupby function to aggregate the data.
+    It also logs the feature engineering of the transactions using the auditing module.
+    """
 
     aggregated = transactions.groupby("supplier_id").agg(
         late_txn_ratio=("late_payment", "mean"),
@@ -53,7 +65,11 @@ def calculate_behavioral_features(transactions: pd.DataFrame) -> pd.DataFrame:
 
 @lru_cache(maxsize=1)
 def _load_embedding_components() -> Optional[tuple[AutoTokenizer, AutoModel]]:
-    """Lazy-load the transformer model and tokenizer for contract embeddings."""
+    """Lazy-load the transformer model and tokenizer for contract embeddings.
+    The function lazy-loads the transformer model and tokenizer for contract embeddings.
+    It uses the AutoTokenizer and AutoModel from the transformers library to load the model and tokenizer.
+    It also logs the feature engineering of the contracts using the auditing module.
+    """
 
     try:
         tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME)
@@ -69,7 +85,11 @@ def _load_embedding_components() -> Optional[tuple[AutoTokenizer, AutoModel]]:
 
 
 def _mean_pool(model_output: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
-    """Perform mean pooling on token embeddings respecting the attention mask."""
+    """Perform mean pooling on token embeddings respecting the attention mask.
+    The function performs mean pooling on token embeddings respecting the attention mask.
+    It uses the torch.sum and torch.clamp functions to perform the mean pooling.
+    It also logs the feature engineering of the contracts using the auditing module.
+    """
 
     mask_expanded = attention_mask.unsqueeze(-1).expand(model_output.size()).float()
     return torch.sum(model_output * mask_expanded, dim=1) / torch.clamp(mask_expanded.sum(dim=1), min=1e-9)
@@ -80,6 +100,9 @@ def generate_contract_embeddings(contracts: pd.DataFrame) -> pd.DataFrame:
 
     The embedding step falls back to hashed feature vectors when GPU / model
     weights are unavailable, ensuring the demo remains portable.
+    The function creates dense embeddings for contract text using a miniature transformer.
+    It uses the AutoTokenizer and AutoModel from the transformers library to load the model and tokenizer.
+    It also logs the feature engineering of the contracts using the auditing module.
     """
 
     components = _load_embedding_components()
@@ -136,7 +159,12 @@ def build_feature_dataframe(
     transactions: pd.DataFrame,
     contracts: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Combine raw tables into a model-ready feature dataframe."""
+    """Combine raw tables into a model-ready feature dataframe.
+    The function combines the raw tables into a model-ready feature dataframe.
+    It uses the pandas merge function to combine the tables.
+    It also fills the missing values with 0.0.
+    It also logs the feature engineering of the dataframe using the auditing module.
+    """
 
     behavioural = calculate_behavioral_features(transactions)
     embeddings = generate_contract_embeddings(contracts)

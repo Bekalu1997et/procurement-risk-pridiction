@@ -13,7 +13,7 @@ from typing import Dict, Iterable, Tuple
 
 import pandas as pd
 
-from . import auditing
+import auditing
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -21,7 +21,10 @@ DATA_PROCESSED_DIR = BASE_DIR / "data" / "processed"
 
 
 def load_processed_datasets() -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Read the canonical processed datasets produced by ``demo_pipeline``."""
+    """Read the canonical processed datasets produced by ``demo_pipeline``.
+    The function loads the training and weekly scoring datasets from the processed directory.
+    It also records the lineage of the datasets using the auditing module.
+    """
 
     training_path = DATA_PROCESSED_DIR / "merged_training.csv"
     weekly_path = DATA_PROCESSED_DIR / "new_data_weekly.csv"
@@ -46,7 +49,10 @@ def load_processed_datasets() -> Tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
-    """Apply canonical cleaning steps: strip whitespace and harmonise names."""
+    """Apply canonical cleaning steps: strip whitespace and harmonise names.
+    The function cleans the columns of the dataframe by stripping whitespace and harmonising the names.
+    It also logs the data quality of the dataframe using the auditing module.
+    """
 
     cleaned = df.copy()
     cleaned.columns = [column.strip().lower() for column in cleaned.columns]
@@ -60,7 +66,9 @@ def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def engineer_temporal_features(df: pd.DataFrame) -> pd.DataFrame:
-    """Add temporal helper columns used by dashboards and the MLOps loop."""
+    """Add temporal helper columns used by dashboards and the MLOps loop.
+    The function adds temporal helper columns to the dataframe used by dashboards and the MLOps loop.
+    """
 
     enriched = df.copy()
     if "created_ts" in enriched.columns:
@@ -72,7 +80,10 @@ def engineer_temporal_features(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def prepare_training_data() -> Tuple[pd.DataFrame, pd.Series]:
-    """Return model-ready feature matrix ``X`` and label vector ``y``."""
+    """Return model-ready feature matrix ``X`` and label vector ``y``.
+    The function loads the training and weekly scoring datasets, cleans the columns,
+    engineers the temporal features, and prepares the training data for the model.
+    """
 
     training_df, _ = load_processed_datasets()
     cleaned = engineer_temporal_features(clean_columns(training_df))
@@ -102,7 +113,10 @@ def prepare_training_data() -> Tuple[pd.DataFrame, pd.Series]:
 
 
 def load_weekly_scoring_data() -> pd.DataFrame:
-    """Fetch and clean the simulated weekly scoring dataset."""
+    """Fetch and clean the simulated weekly scoring dataset.
+    The function loads the weekly scoring dataset, cleans the columns,
+    engineers the temporal features, and prepares the weekly scoring data for the model.
+    """
 
     _, weekly_df = load_processed_datasets()
     cleaned = engineer_temporal_features(clean_columns(weekly_df))
